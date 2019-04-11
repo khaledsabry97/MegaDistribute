@@ -1,0 +1,35 @@
+i need to do
+1) master database
+2) data keeper database
+
+1)master tracker database
+
+table (users) : "user id,node id,file name",no of parts
+php files:-
+- getfiles : get files by user id without duplication
+http://localhost/master_tracker/get_files.php?user_id=5
+
+
+- get files that have less than 3 duplication: http://localhost/master_tracker/get_nodes_less_duplication.php
+
+- getnodes_contains-file: send user id, file name and get nodes id
+http://localhost/master_tracker/get_nodes_contain_file.php?user_id=2&file_name=khal
+
+
+- insert_file: after success from datanode get its id and user id and file name and no of parts
+and 
+after duplication
+http://localhost/master_tracker/insert_file.php?node_id=7&file_name=kdhal&size_parts=37&user_id=4&current_available=true
+
+
+update_duplication:send user_id,node_id,file_name to update current_available to true
+http://localhost/master_tracker/update_duplication.php?user_id=2&file_name=khal&node_id=3
+
+
+2) data node keeper database
+table : user id,part id,filename,path
+get_all_parts : send user id, filename and get part_id and path
+http://localhost/keeper_tracker/get_all_parts.php?user_id=2&file_name=khal
+
+insert file: send user id, part id, filename and path
+http://localhost/keeper_tracker/insert_file.php?user_id=2&file_name=khaxl&part_id=1&path=/sdf/sdf
