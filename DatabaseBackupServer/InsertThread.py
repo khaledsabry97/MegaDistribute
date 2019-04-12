@@ -3,11 +3,11 @@ import requests
 
 from DatabaseBackupServer.links import Links
 
-
+#to check connectivity to specific slave database server and insert in the database what was found in the backup database
 class InsertThread(threading.Thread):
     def __init__(self, data, serverId):
         threading.Thread.__init__(self)
-        self.data = data
+        self.data = data #array of json for specific server id
         self.serverId = serverId
 
     def run(self):
@@ -40,11 +40,11 @@ class InsertThread(threading.Thread):
                     "email": obj["email"],
                     "password": obj["password"]}
             print("server_id " + obj["server_id"] + "trying")
-            thread = InsertThread(Links.insertBackupToSlave, data)
-            thread.start()
+
             t1 = threading.Thread(target=self.send, args=[data])
             t1.start()
 
+    #send the data to its specific database server
     def send(self, data):
         r = requests.post(url=Links.insertBackupToSlave, data=self.data)
         result = r.text

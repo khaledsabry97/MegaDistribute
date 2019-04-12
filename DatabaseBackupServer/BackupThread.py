@@ -5,7 +5,7 @@ import requests
 from DatabaseBackupServer.InsertThread import InsertThread
 from DatabaseBackupServer.links import Links
 
-
+#to check and insert the indices from backup database to slaves databases
 class BackupThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
@@ -13,21 +13,27 @@ class BackupThread(threading.Thread):
     def run(self):
         self.checkBackup()
 
+# check the backup database to get all the indices in the backup
     def checkBackup(self):
 
         while (True):
             try:
                 r = requests.post(url=Links.checkBackupRequest, data={})
-                print(r.text)
                 result = r.json()
+
                 if (result["server_response"] != "server down" and result["server_response"] != False):
-                    self.insertBackUp(result["server_response"]);
+                    array = result["server_response"]
+                    print("Found " + str(len(array)) + ": " + r.text)
+                    self.insertBackUp(array);
             except:
-                pass
+                print("BackupThread-checkbackup")
 
             time.sleep(3)
 
+    #if found something insert it to the slaves databases
     def insertBackUp(self, json):
+
+        #here we trying to collect all the indices to its database slave server id
         dict = {}
         size = len(json)
         for i in range(size):
@@ -36,7 +42,8 @@ class BackupThread(threading.Thread):
 
             dict[json[i]["server_id"]].append(json[i])
 
+        #we loop on all the server ids to add to them their indices
         array = list(dict.keys())
         for i in range (len(array)):
-            thread = InsertThread(dict[array[i]], array[i])
+            thread = InsertThread(dict[array[i]], array[i]) #open another thread
             thread.start()
