@@ -6,6 +6,9 @@ import sys
 
 import requests
 
+from Datakeepers import DataKeepers
+
+
 class SubscriberLive(threading.Thread):
     ips = ["localhost:7001"]
     def __init__(self):
@@ -28,5 +31,6 @@ class SubscriberLive(threading.Thread):
 
         while(True):
             s = socket.recv_string()
+            DataKeepers.updateTime(int(s))
             print(s)
 

@@ -3,26 +3,28 @@ import time
 
 
 class DataKeepers:
-    instance = None
+    __instance = None
 
     global dks
-    dks = {}
     global ports
+
+    dks = {}
     ports = {}
 
     @staticmethod
     def getInstance(self):
-        if DataKeepers.instance == None:
+        if DataKeepers.__instance == None:
             DataKeepers()
 
-        return DataKeepers.instance
+        return DataKeepers.__instance
 
     def __init__(self):
-        if DataKeepers.instance == None:
-            DataKeepers.instance = self
+        if DataKeepers.__instance == None:
+            DataKeepers.__instance = self
             self.inialize()
 
-    def inialize(self):
+    @staticmethod
+    def inialize():
         dks[1] = [0,"192.168.0.0" ]
         ports[1] = [7000, 7002, 7004]
         dks[2] = [0, "192.168.0.0" ]
@@ -31,9 +33,10 @@ class DataKeepers:
         ports[3] = [9000, 9002, 9004]
 
     #update time for selected port id
-    def updateTime(self,id):
+    @staticmethod
+    def updateTime(id):
         if id in dks:
-            print("Data Node "+id+" : "+dks[id][0]+" to "+dks[id][0])
+            print("Data Node "+str(id)+" : "+str(dks[id][0])+" to "+str(int(time.time() * 1000)))
             dks[id][0] = int(time.time() * 1000)
         else:
             print("didn't fint that id")
@@ -72,7 +75,7 @@ class DataKeepers:
 
     #pass node id and see if it's alive or not
     def checkIfAlive(self,id):
-        if int(time.time() * 1000) - dks[id][0] <= 1000:
+        if int(time.time() * 1000) - dks[id][0] <= 1100:
             return True
         return False
 
