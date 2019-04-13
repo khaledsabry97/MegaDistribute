@@ -4,7 +4,7 @@ i need to do
 
 1)master tracker database
 
-table (users) : "user id,node id,file name",no of parts
+table (users) : "user id,node id,file name",no of parts,date_created, current available
 php files:-
 - getfiles : get files by user id without duplication
 http://localhost/master_tracker/get_files.php?user_id=5
@@ -27,7 +27,7 @@ http://localhost/master_tracker/update_duplication.php?user_id=2&file_name=khal&
 
 
 2) data node keeper database
-table : user id,part id,filename,path
+table : user id,part id,filename,path,date created
 get_all_parts : send user id, filename and get part_id and path
 http://localhost/keeper_tracker/get_all_parts.php?user_id=2&file_name=khal
 
