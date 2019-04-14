@@ -53,6 +53,7 @@ class DataKeepers:
 
     #get random alive data nodes
     #you can pass the ids of nodes that you don't want to see in the result by defualt empty
+    @staticmethod
     def getAliveDataNodesExclude(self,id=[]):
         # assign it if you put one or two nodes that you don't want to see them
         node1 = -1
@@ -74,7 +75,8 @@ class DataKeepers:
             return -1
 
     #pass node id and see if it's alive or not
-    def checkIfAlive(self,id):
+    @staticmethod
+    def checkIfAlive(id):
         if int(time.time() * 1000) - dks[id][0] <= 1100:
             return True
         return False
@@ -106,6 +108,20 @@ class DataKeepers:
         else:
             return  "-1" # not found
 
+     #return if one of the nodeIds Sent if it's alive
+    @staticmethod
+    def getNodeIdAliveInclude(nodeIds = []):
+
+        arr = []  # array to insert all the potential selected ids for the node
+        for i in range(len(nodeIds)):
+            if DataKeepers.checkIfAlive(nodeIds[i]) :
+                arr.append(nodeIds[i])
+        if len(arr) > 0:
+            random.shuffle(arr)  # randomize the array of nodes
+            return arr[0],True
+        else:
+            print("no nodes found")
+            return arr,False
 
 
 
