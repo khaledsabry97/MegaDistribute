@@ -12,18 +12,6 @@ class DataKeepers:
     ports = {}
 
     @staticmethod
-    def getInstance(self):
-        if DataKeepers.__instance == None:
-            DataKeepers()
-
-        return DataKeepers.__instance
-
-    def __init__(self):
-        if DataKeepers.__instance == None:
-            DataKeepers.__instance = self
-            self.inialize()
-
-    @staticmethod
     def inialize():
         dks[1] = [0,"192.168.0.0" ]
         ports[1] = [7000, 7002, 7004]
@@ -42,10 +30,10 @@ class DataKeepers:
             print("didn't fint that id")
 
     #get random port for selected node id
-    def getRandomPort(self,id):
+    @staticmethod
+    def getRandomPort(id):
         if id in ports:
-            print("Data Node "+id+" : "+dks[id][0]+" to "+dks[id][0])
-            portid = random.randint(len(ports[id]))
+            portid = random.randint(1,len(ports[id]))
             return ports[id][portid]
         else:
             print("didn't fint that id")
@@ -54,30 +42,31 @@ class DataKeepers:
     #get random alive data nodes
     #you can pass the ids of nodes that you don't want to see in the result by defualt empty
     @staticmethod
-    def getAliveDataNodesExclude(self,id=[]):
+    def getAliveDataNodesExclude(id=[]):
         # assign it if you put one or two nodes that you don't want to see them
         node1 = -1
         node2 = -1
         if len(id) == 1:
-            node1 = id[0]
+            node1 = int(id[0])
         elif len(id) == 2:
-            node2 = id[1]
+            node1 = int(id[0])
+            node2 = int(id[1])
 
         arr = [] #array to insert all the potential selected ids for the node
         for i in range(1, len(list(dks.keys())) + 1):
-            if self.checkIfAlive(i) and i != node1 and i != node2:
+            if DataKeepers.checkIfAlive(i) and i != node1 and i != node2:
                 arr.append(i)
         if len(arr) > 0:
             random.shuffle(arr) #randomize the array of nodes
-            return arr
+            return arr,True
         else:
             print("no nodes found")
-            return -1
+            return [],False
 
     #pass node id and see if it's alive or not
     @staticmethod
     def checkIfAlive(id):
-        if int(time.time() * 1000) - dks[id][0] <= 1100:
+        if int(time.time() * 1000) - dks[int(id)][0] <= 1100:
             return True
         return False
 
@@ -87,10 +76,11 @@ class DataKeepers:
     #first output 'll be an array of ports
     #sec. output 'll be true if the size you sent back to you if less than the size you sent then it 'll return false
     #third output 'll be the size of the comming array of ports
-    def getPorts(self,nodeIds,size = 6):
+    @staticmethod
+    def getPorts(nodeIds,size = 6):
         arr = []
         for i in range(len(nodeIds)):
-            if self.checkIfAlive(nodeIds[i]):
+            if DataKeepers.checkIfAlive(nodeIds[i]):
                 for j in range(len(ports[nodeIds[i]])):
                     arr.append(ports[nodeIds[i]][j])
 
@@ -102,8 +92,9 @@ class DataKeepers:
 
 
     #return DataNodeIp for node id
-    def getDataNodeIp(self,nodeId):
-        if nodeId in self.dks:
+    @staticmethod
+    def getDataNodeIp(nodeId):
+        if nodeId in dks:
             return dks[nodeId][1]
         else:
             return  "-1" # not found

@@ -1,9 +1,9 @@
 import json
 
-from SenderController import SenderController
+from Connections.SenderController import SenderController
 
 
-class JsonGenerator:
+class JsonEncoder:
 
     def __init__(self):
        pass

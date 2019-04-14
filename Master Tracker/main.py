@@ -1,9 +1,7 @@
-import time
-from threading import Thread, Lock
 
-from Datakeepers import DataKeepers
-from Duplicate import Duplicate
-from SubscriberLive import SubscriberLive
+from Data.Datakeepers import DataKeepers
+from Functions.Duplicate import Duplicate
+from Functions.SubscriberLive import SubscriberLive
 
 DataKeepers.inialize()
 

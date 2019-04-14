@@ -6,6 +6,7 @@ import sys
 
 import requests
 
+from Controller.JsonDecoder import JsonDecoder
 
 
 class SenderController(threading.Thread):
@@ -27,6 +28,8 @@ class SenderController(threading.Thread):
         socket.connect(link)
 
         socket.send_json(self.json)
-        socket.recv_json()
+        jsons = socket.recv_json()
+        thread = JsonDecoder(jsons)
+        thread.start()
 
 

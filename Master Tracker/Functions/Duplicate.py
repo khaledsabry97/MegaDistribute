@@ -1,13 +1,10 @@
 import threading
 
 import time
-import sys
 
-import requests
-
-from DataBaseController import DatabaseController
-from Datakeepers import DataKeepers
-from JsonGenerator import JsonGenerator
+from Connections.DataBaseController import DatabaseController
+from Data.Datakeepers import DataKeepers
+from Controller.JsonEncoder import JsonEncoder
 
 
 class Duplicate(threading.Thread):
@@ -22,10 +19,8 @@ class Duplicate(threading.Thread):
 
 
     def checkPeriodic(self):
-        json = DatabaseController.getLessThan3Duplication()
+        array = DatabaseController.getLessThan3Duplication()
         userIdMap = {}
-
-        array = json["server_response"]
 
         #adding the structure of maps
         for i in range(len(array)):
@@ -49,15 +44,15 @@ class Duplicate(threading.Thread):
                 senderNodeId,found = DataKeepers.getNodeIdAliveInclude(nodeIds)
                 if found == False:
                     continue
-
+                senderNodeId = int(senderNodeId)
                 senderIp = DataKeepers.getDataNodeIp(senderNodeId)
                 senderPort = DataKeepers.getRandomPort(senderNodeId)
-                newNodeIdList = DataKeepers.getAliveDataNodesExclude(nodeIds)
+                newNodeIdList,_= DataKeepers.getAliveDataNodesExclude(nodeIds)
                 for k in range(len(newNodeIdList)):
                     receiverNodeId = newNodeIdList[k]
                     receiverIp = DataKeepers.getDataNodeIp(receiverNodeId)
                     receiverPort = DataKeepers.getRandomPort(receiverNodeId)
-                    jsonGenerator = JsonGenerator()
+                    jsonGenerator = JsonEncoder()
                     jsonGenerator.duplicate(currentUserId,currentFileName,senderIp,senderPort,receiverIp,receiverPort)
                     DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName)
 
