@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93d12379-0114-46ee-abff-27ba35a06a09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Master Tracker/Data/Links.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/DataBaseController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/JsonGenerator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/JsonGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Controller/JsonEncoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/SenderController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/SenderController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/SenderController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="93d12379-0114-46ee-abff-27ba35a06a09" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +150,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32914045" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32914045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

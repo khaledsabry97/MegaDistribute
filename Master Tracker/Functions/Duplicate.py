@@ -13,11 +13,11 @@ class Duplicate(threading.Thread):
 
     def run(self):
         while(True):
-            time.sleep(2)
             self.checkPeriodic()
+            time.sleep(2)
 
 
-
+    #check periodic if file not in 3 data nodes
     def checkPeriodic(self):
         array = DatabaseController.getLessThan3Duplication()
         userIdMap = {}
@@ -56,7 +56,7 @@ class Duplicate(threading.Thread):
                     jsonGenerator.duplicate(currentUserId,currentFileName,senderIp,senderPort,receiverIp,receiverPort)
                     DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName)
 
-        DatabaseController.deleteDuplicateMoreThanOneDayNoSuccess()
+        DatabaseController.deleteDuplicateMoreThan6HoursNoSuccess()
 
 
 

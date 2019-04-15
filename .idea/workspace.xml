@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8f94f26-479b-4516-a997-8c6bd06b3d8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Master Tracker/Connections/DataBaseController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Master Tracker/Data/Links.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/DataBaseController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/JsonGenerator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/JsonGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/Controller/JsonEncoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/SenderController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/SenderController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/Connections/SenderController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Master Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Master Tracker/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +44,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DatabaseBackupServer/BackupThread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="650">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +114,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="995" />
+    <option name="y" value="527" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -135,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +144,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +205,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13277134" />
@@ -287,6 +280,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseBackupServer/links.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1508">
@@ -301,17 +301,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseBackupServer/links.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseBackupServer/BackupThread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="650">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

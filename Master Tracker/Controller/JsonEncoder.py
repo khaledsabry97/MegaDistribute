@@ -8,6 +8,12 @@ class JsonEncoder:
     def __init__(self):
        pass
 
+
+    def send(self,ip,port,json):
+        thread = SenderController(ip,port,json)
+        thread.start()
+
+    #send duplication request to the data node
     def duplicate(self,userId,fileName,senderNodeIp,senderNodePort,receiverNodeIp,recieverNodePort):
         func = "duplicate"
         sendingMsg = {"func":func,
@@ -17,7 +23,6 @@ class JsonEncoder:
                       "receiver_port":recieverNodePort}
 
         jsons = json.dumps(sendingMsg)
-        thread = SenderController(senderNodeIp,senderNodePort,jsons)
-        thread.start()
+        self.send(senderNodeIp,senderNodePort,jsons)
 
 

@@ -4,22 +4,97 @@ from Data.Links import Links
 
 
 class DatabaseController:
+    ################################
+    #Essential Methods#
 
+    #for all inserts, deletes and update queries
     @staticmethod
-    def getLessThan3Duplication():
-        r = requests.post(url=Links.getLessThan3Duplication, data={})
+    def inUpDL(link,data={}):
+        r = requests.post(url=link, data=data)
         result = r.json()
 
-        if (result["server_response"] != "server down" and result["server_response"] != False):
-            array = result["server_response"]
-            return array
-        return []
+        try:
+            if (result["server_response"] == True):
+                return True
+        except:
+            pass
+        return False
+
+    #for all select queries
+    def select(link,data={}):
+        r = requests.post(url=link, data=data)
+        result = r.json()
+        array = []
+        try:
+            if (result["server_response"] != "server down" and result["server_response"] != False):
+                array = result["server_response"]
+        except:
+            return [],False
+        return array,True
+    #Essential Methods#
+    ################################
+
+
+    #to add file after success upload
+    @staticmethod
+    def addFile(userId,nodeId,fileName,sizeOfParts):
+        data = {"user_id":userId,
+                "node_id":nodeId,
+                "file_name":fileName,
+                "size_parts":sizeOfParts,
+                "current_available":True}
+        return DatabaseController.inUpDL(Links.addFileDup, data)
+
+    #get all the files for user id
+    @staticmethod
+    def getFiles(userId):
+        data = {"user_id": userId}
+        array,state = DatabaseController.select(Links.getFiles,data)
+        if state == False:
+            return []
+        return array
+
+    #get all the nodes ids that has the filename for specific user id
+    @staticmethod
+    def getNodesContainsFile(userId,fileName):
+        data = {"user_id": userId,
+                "file_name":fileName}
+        array,state = DatabaseController.select(Links.getNodesContainsFile,data)
+        if state == False:
+            return []
+        return array
+
+
+
+    ################################
+    #Duplication Methods#
+    @staticmethod
+    def getLessThan3Duplication():
+        array,state = DatabaseController.select(Links.getLessThan3Duplication)
+        if state == False:
+            return []
+        return array
 
 
     @staticmethod
-    def addDuplicateNoSuccess(userId,nodeId,fileName):
-       pass
+    def addDuplicateNoSuccess(userId,nodeId,fileName,sizeOfParts):
+        data = {"user_id":userId,
+                "node_id":nodeId,
+                "file_name":fileName,
+                "size_parts":sizeOfParts,
+                "current_available":False}
+        return DatabaseController.inUpDL(Links.addFileDup, data)
 
     @staticmethod
-    def deleteDuplicateMoreThanOneDayNoSuccess():
-        pass
+    def deleteDuplicateMoreThan6HoursNoSuccess():
+        return DatabaseController.inUpDL(Links.deleteNoDuplicationHappend)
+
+    @staticmethod
+    def updateDuplication(userId,nodeId,fileName):
+        data = {"user_id":userId,
+                "node_id":nodeId,
+                "file_name":fileName}
+        return DatabaseController.inUpDL(Links.updateDuplication,data)
+
+    # Duplication Methods#
+    ################################
