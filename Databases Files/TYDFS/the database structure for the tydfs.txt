@@ -26,6 +26,9 @@ update_duplication:send user_id,node_id,file_name to update current_available to
 http://localhost/master_tracker/update_duplication.php?user_id=2&file_name=khal&node_id=3
 
 
+deleteInLast6HoursNotActivated : so periodic delete any file that its current availability is false in the last 6 hours
+http://localhost/master_tracker/deleteInLast6HoursNotActivated.php
+
 2) data node keeper database
 table : user id,part id,filename,path,date created
 get_all_parts : send user id, filename and get part_id and path
