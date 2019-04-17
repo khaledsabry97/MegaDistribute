@@ -46,5 +46,8 @@ class InsertThread(threading.Thread):
 
     #send the data to its specific database server
     def send(self, data):
-        r = requests.post(url=Links.insertBackupToSlave, data=self.data)
-        result = r.text
+        # it 'll send an insert and delete if success from backup database
+        r = requests.post(url=Links.insertBackupToSlave, data=data)
+        result = r.json()
+
+
