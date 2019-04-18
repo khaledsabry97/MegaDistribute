@@ -5,7 +5,10 @@ from tkinter import filedialog
 
 class IO :
 
-    def Get_file_path(self):
+    def __init__(self):
+        pass
+
+    def getFilePath(self):
       root = tk.Tk()
       root.withdraw()
 

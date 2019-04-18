@@ -1,4 +1,5 @@
 import random
+import socket
 
 
 class Data:
@@ -21,7 +22,8 @@ class Data:
         return self.masterPorts[0]
 
     def getLocalIp(self):
-        return "host"
+        hostname = socket.gethostname()
+        return (socket.gethostbyname(hostname))
 
     def getIp(self):
         return ip

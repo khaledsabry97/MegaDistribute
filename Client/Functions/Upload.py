@@ -43,6 +43,7 @@ class Upload:
 
     def changeFileName(self,msg):
         print(msg)
-        #call the io msg
+        data = Data()
+        data.fileName = input("what is the name of your file : ")
         self.sendUploadReq()
 

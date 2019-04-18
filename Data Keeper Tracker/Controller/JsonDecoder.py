@@ -31,7 +31,6 @@ class JsonDecoder(threading.Thread):
             file_size = jsons["file_size"]
             file_name= jsons["file_name"]
             data = Data()
-            from Controller.JsonEncoder import JsonEncoder
             jsonEncoder = JsonEncoder()
             jsonEncoder.uploadCompleted(user_id,file_name,file_size,data.getId(),data.getMasterIp(),data.getMasterPort())
 
