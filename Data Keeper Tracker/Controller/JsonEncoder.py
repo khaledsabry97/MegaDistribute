@@ -63,7 +63,15 @@ class JsonEncoder:
                     jsons = json.dumps(sendingMsg)
                     self.send(receiverIp, receiverPort, jsons)
                     byte +=bytesToRead
+        func = "duplicate_complete"
+        sendingMsg = {"func": func,
+                      "user_id": user_id,
+                      "file_name": file_name,
+                      "file_size": size
+                      }
 
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp, receiverPort, jsons)
     def uploadCompleted(self,user_id,file_name,file_size,node_id,receiverIp,receiverPort):
         func = "upload_complete"
         sendingMsg = {"func": func,
