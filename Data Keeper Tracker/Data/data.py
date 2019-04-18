@@ -4,9 +4,9 @@ import random
 class Data:
 
     def __init__(self):
-        self.ip = ""
-        self.masterIp = ""
-        self.masterPorts = [6000,6002,6004]
+        self.ip = "localhost"
+        self.masterIp = "localhost"
+        self.masterPorts = [10000,10002,10004]
         self.id = 1
 
 

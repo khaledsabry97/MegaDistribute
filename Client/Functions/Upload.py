@@ -2,7 +2,7 @@ import base64
 import json
 import os
 
-from Controller import JsonEncoder
+from Controller.JsonEncoder import JsonEncoder
 from Data.data import Data
 
 
@@ -38,7 +38,7 @@ class Upload:
     def sendUploadReq(self):
         data = Data()
         jsonEncoder = JsonEncoder()
-        jsonEncoder.uploadReq(data.userId,data.fileName,data.getIp(),data.getMasterIp(),data.getMasterPort())
+        jsonEncoder.uploadReq(Data.userId,Data.fileName,data.getIp(),data.getMasterIp(),data.getMasterPort())
 
 
     def changeFileName(self,msg):

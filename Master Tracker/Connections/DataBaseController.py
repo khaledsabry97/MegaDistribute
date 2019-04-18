@@ -22,10 +22,11 @@ class DatabaseController:
 
     #for all select queries
     def select(link,data={}):
-        r = requests.post(url=link, data=data)
-        result = r.json()
-        array = []
         try:
+            r = requests.post(url=link, data=data)
+            result = r.json()
+            array = []
+
             if (result["server_response"] != "server down" and result["server_response"] != False):
                 array = result["server_response"]
         except:

@@ -10,7 +10,7 @@ class Data:
     userId = 1
     ip = " "
     def __init__(self):
-        self.masterIp = ""
+        self.masterIp = "localhost"
         self.masterPorts = [10000,10002,10004]
 
 
@@ -21,10 +21,8 @@ class Data:
         random.shuffle(self.masterPorts)  # randomize the array of nodes
         return self.masterPorts[0]
 
-    def getLocalIp(self):
-        hostname = socket.gethostname()
-        return (socket.gethostbyname(hostname))
 
     def getIp(self):
-        return ip
+        hostname = socket.gethostname()
+        return (socket.getfqdn())
 

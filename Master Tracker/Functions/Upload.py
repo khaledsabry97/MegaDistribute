@@ -1,5 +1,5 @@
 from Connections.DataBaseController import DatabaseController
-from Controller import JsonEncoder
+from Controller.JsonEncoder import JsonEncoder
 from Data.Datakeepers import DataKeepers
 
 
@@ -24,11 +24,14 @@ class Upload:
             self.changeUserName(fileName,clientIp)
         else:
             id = DataKeepers.getAliveDataNodesExclude()
-            ip = DataKeepers.getDataNodeIp(id)
-            port = DataKeepers.getRandomPort(id)
+            if id.__len__() > 0:
+                ids = str(id[0])
+                id = int(ids[1])
+                ip = DataKeepers.getDataNodeIp(id)
+                port = DataKeepers.getRandomPort(id)
 
-            jsonEncoder = JsonEncoder()
-            jsonEncoder.uploadReqSuccess(ip, port, clientIp)
+                jsonEncoder = JsonEncoder()
+                jsonEncoder.uploadReqSuccess(ip, port, clientIp)
 
 
 

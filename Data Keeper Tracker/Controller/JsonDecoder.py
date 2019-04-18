@@ -4,6 +4,7 @@ import threading
 
 from Functions.FileSystem import FileSystem
 from Data.data import Data
+from Controller.JsonEncoder import JsonEncoder
 
 class JsonDecoder(threading.Thread):
     def __init__(self,jsons):

@@ -4,7 +4,7 @@ import threading
 import zmq
 
 
-from Controller import JsonDecoder
+from Controller.JsonDecoder import JsonDecoder
 
 
 class ReceiverController(threading.Thread):
@@ -23,12 +23,15 @@ class ReceiverController(threading.Thread):
         socket.bind("tcp://*:%s" % self.port)
 
         while True:
-            #  Wait for next request from client
-            message = socket.recv_json()
-            type(message)
-            jsons = json.loads(message)
-            jsonDecoder = JsonDecoder(jsons)
-            jsonDecoder.start()
-            socket.send_json({"func":"success"})
+            try:
+                #  Wait for next request from client
+                message = socket.recv_json()
+                type(message)
+                jsons = json.loads(message)
+                jsonDecoder = JsonDecoder(jsons)
+                jsonDecoder.start()
+                socket.send_json({"func":"success"})
+            except:
+                print("error")
 
 

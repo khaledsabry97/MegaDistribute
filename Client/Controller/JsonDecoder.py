@@ -1,7 +1,7 @@
 import json
 import threading
 
-from Functions import Upload, Duplicate, Download
+from Functions.Upload import Upload
 
 
 class JsonDecoder(threading.Thread):

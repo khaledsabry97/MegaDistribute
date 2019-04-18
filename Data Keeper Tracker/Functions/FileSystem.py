@@ -16,10 +16,10 @@ class FileSystem:
         c = base64.decodebytes(c)
         currentPath = "[" + str(user_id) + "] "+file_name+".mp4"
         mode = "ab"
-        if(os.path.exists(currentPath)):
-            size = os.path.getsize(currentPath)
-            if size != current_size:
-                mode = "w"
+        #if(os.path.exists(currentPath)):
+           # size = os.path.getsize(currentPath)
+            #if size != current_size:
+                #mode = "w"
 
 
 

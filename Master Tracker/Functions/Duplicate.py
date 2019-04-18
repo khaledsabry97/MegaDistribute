@@ -32,7 +32,7 @@ class Duplicate(threading.Thread):
             fileMap = userIdMap[userId]
             if fileName not in fileMap:
                 userIdMap[userId][fileName]= []
-            userIdMap[userId][fileName].append(nodeId)
+            userIdMap[userId][fileName].append(int(nodeId))
 
         userIdKeys = list(userIdMap.keys())
         for i in range(len(userIdKeys)):
