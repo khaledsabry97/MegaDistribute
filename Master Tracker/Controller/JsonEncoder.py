@@ -15,7 +15,7 @@ class JsonEncoder:
 
     #send duplication request to the data node
     def duplicate(self,userId,fileName,senderNodeIp,senderNodePort,receiverNodeIp,recieverNodePort):
-        func = "duplicate"
+        func = "duplicate_request"
         sendingMsg = {"func":func,
                       "user_id":userId,
                       "file_name":fileName,

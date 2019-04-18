@@ -6,6 +6,9 @@ import sys
 
 import requests
 
+from Data.data import Data
+
+
 class PublisherLive(threading.Thread):
     id = "1"
     def __init__(self):
@@ -20,7 +23,6 @@ class PublisherLive(threading.Thread):
         socket = context.socket(zmq.PUB)
         socket.bind("tcp://*:7001")
         while True:
-            messagedata = id
-            print("100")
-            socket.send_string("1")
+            data = Data()
+            socket.send_string(str(data.getId()))
             time.sleep(1)
