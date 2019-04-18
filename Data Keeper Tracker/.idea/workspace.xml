@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d12379-0114-46ee-abff-27ba35a06a09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Connections/ReceiverController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Connections/ReceiverController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Connections/SenderController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Connections/SenderController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Controller/JsonDecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Controller/JsonDecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Functions/Download.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Functions/Duplicate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Functions/SubscriberLive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Functions/Upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Functions/Upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Connections/SenderController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/SenderController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/JsonDecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/JsonDecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/FileSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/FileSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adele.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/ReceiverController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/ReceiverController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/SenderController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Controller/JsonDecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Controller/JsonDecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/Upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/Upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
