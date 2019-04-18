@@ -45,3 +45,32 @@ class JsonEncoder:
         self.send(receiverIp,3000,jsons)
 
 
+    def showFiles(self,fileArray,sizesArray,receiverIp):
+        func = "show_files"
+        sendingMsg = {"func":func,
+                      "files":fileArray,
+                      "fileSizes":sizesArray}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp,3000,jsons)
+
+
+
+    def downloadReqFailed(self,msg,fileName,receiverIp):
+        func = "upload_req_failed"
+        sendingMsg = {"func":func,
+                      "msg":msg,
+                      "file_name":fileName}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp,3000,jsons)
+
+    def downloadIpsPorts(self,ips,ports,receiverIp):
+        func = "download_ips_ports"
+        sendingMsg = {"func":func,
+                      "ips":ips,
+                      "ports":ports}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp,3000,jsons)
+

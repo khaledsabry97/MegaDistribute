@@ -1,11 +1,11 @@
 import json
 import threading
 
-from Connections.SenderController import SenderController
-from Functions import Upload
+from Functions import Upload, Duplicate, Download
 
 
 class JsonDecoder(threading.Thread):
+
     def __init__(self,jsons):
         threading.Thread.__init__(self)
         self.jsons = jsons
@@ -39,12 +39,22 @@ class JsonDecoder(threading.Thread):
             user_id = jsons["user_id"]
             file_size = jsons["file_size"]
             file_name = jsons["file_name"]
+            node_id = jsons["node_id"]
+            duplicate = Duplicate()
+            duplicate.duplicateComplete(user_id,file_name,file_size,node_id)
 
-            data = Data()
-            jsonEncoder = JsonEncoder()
-            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, data.getId(), data.getMasterIp(),
-                                        data.getMasterPort())
+        elif (func == "download_request"):
+            user_id = jsons["user_id"]
+            client_ip = jsons["client_ip"]
 
-        elif (func == "duplicate_complete"):
+            download = Download()
+            download.showFiles(user_id,client_ip)
+
+        elif (func == "download_file"):
+            user_id = jsons["user_id"]
+            file_name = jsons["file_name"]
+            client_ip = jsons["client_ip"]
+            download = Download()
+            download.downloadFile(user_id,file_name,client_ip)
 
 

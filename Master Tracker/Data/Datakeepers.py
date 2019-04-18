@@ -13,7 +13,7 @@ class DataKeepers:
 
     @staticmethod
     def inialize():
-        dks[1] = [0,"192.168.0.0" ]
+        dks[1] = [0,"localhost" ]
         ports[1] = [7000, 7002, 7004]
         dks[2] = [0, "192.168.0.0" ]
         ports[2] = [8000, 8002, 8004]
@@ -66,6 +66,8 @@ class DataKeepers:
     #pass node id and see if it's alive or not
     @staticmethod
     def checkIfAlive(id):
+        if(int(id) > 3 or id <0):
+            return False
         if int(time.time() * 1000) - dks[int(id)][0] <= 1100:
             return True
         return False
@@ -114,6 +116,37 @@ class DataKeepers:
             print("no nodes found")
             return arr,False
 
+
+
+     #return if array of the nodeIds Sent if it's alive
+    @staticmethod
+    def getNodeIdsAlive(nodeIds):
+
+        arr = []  # array to insert all the potential selected ids for the node
+        for i in range(len(nodeIds)):
+            if DataKeepers.checkIfAlive(nodeIds[i]) :
+                arr.append(nodeIds[i])
+        if len(arr) > 0:
+            random.shuffle(arr)  # randomize the array of nodes
+            return arr,True
+        else:
+            print("no nodes found")
+            return arr,False
+
+
+    def getIpsandPorts(nodeIds,size = 6):
+        ips = []
+        ports = []
+        for i in range(len(nodeIds)):
+            if DataKeepers.checkIfAlive(nodeIds[i]):
+                for j in range(len(ports[nodeIds[i]])):
+                    ports.append(ports[nodeIds[i]][j])
+                    ips.append(nodeIds[i])
+
+        if len(ports) >= size:
+            return ips[0,size],ports[0,size],True,size
+        else:
+            return ips,ports,False,len(ips)
 
 
 

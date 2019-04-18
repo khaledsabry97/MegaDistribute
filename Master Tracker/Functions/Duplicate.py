@@ -59,7 +59,8 @@ class Duplicate(threading.Thread):
         DatabaseController.deleteDuplicateMoreThan6HoursNoSuccess()
 
 
-
+    def duplicateComplete(self,userId,fileName,fileSize,nodeId):
+        DatabaseController.updateDuplication(userId,nodeId,fileName)
 
 
 

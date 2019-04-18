@@ -1,7 +1,7 @@
 import threading
 import zmq
 
-from Controller.JsonDecoder import JsonDecoder
+from Controller import JsonDecoder
 
 
 class SenderController(threading.Thread):

@@ -6,9 +6,11 @@ from Data.Datakeepers import DataKeepers
 
 
 class SubscriberLive(threading.Thread):
-    ips = ["localhost:7001"]
+
     def __init__(self):
         threading.Thread.__init__(self)
+        idIp = DataKeepers.getDataNodeIp(1) + ":" + str(7001)
+        self.ips = [idIp]
 
     def run(self):
         self.sub()
