@@ -13,7 +13,7 @@ class Upload:
 
         structure = {}
         for i in range(len(arr)):
-            nodeId = arr[i]["node_id"]
+            nodeId = int(arr[i]["node_id"])
             file_Name = arr[i]["file_name"]
 
             if file_Name not in structure:

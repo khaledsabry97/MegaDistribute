@@ -1,11 +1,12 @@
 import random
+import socket
 
 
 class Data:
 
     def __init__(self):
-        self.masterIp = ""
-        self.masterPorts = [6000,6002,6004]
+        self.masterIp = (socket.getfqdn())
+        self.masterPorts = [10000,10002,10004]
 
 
     def getMasterIp(self):

@@ -9,9 +9,9 @@ class SubscriberLive(threading.Thread):
 
     def __init__(self):
         threading.Thread.__init__(self)
-        idIp1 = DataKeepers.getDataNodeIp(1) + ":" + str(7001)
-        idIp1 = DataKeepers.getDataNodeIp(2) + ":" + str(7001)
-        self.ips = [idIp]
+        idIp1 = DataKeepers.getDataNodeIp(1) + ":" + str(5006+1*1000)
+        idIp2 = DataKeepers.getDataNodeIp(2) + ":" + str(5006+2*1000)
+        self.ips = [idIp1,idIp2]
 
     def run(self):
         self.sub()

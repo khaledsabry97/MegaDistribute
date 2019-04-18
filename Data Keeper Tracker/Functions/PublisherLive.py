@@ -21,9 +21,9 @@ class PublisherLive(threading.Thread):
     def sendPeriodic(self):
         context = zmq.Context()
         socket = context.socket(zmq.PUB)
-        socket.bind("tcp://*:7001")
+        link = "tcp://*:"+str(5006+Data.id*1000)
+        socket.bind(link)
         while True:
-            data = Data()
-            print(data.getId())
-            socket.send_string(str(data.getId()))
+            print(Data.id)
+            socket.send_string(str(Data.id))
             time.sleep(1)

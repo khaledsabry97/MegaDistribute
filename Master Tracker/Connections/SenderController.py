@@ -24,6 +24,7 @@ class SenderController(threading.Thread):
 
         socket.send_json(self.json)
         jsons = socket.recv_json()
+        from Controller.JsonDecoder import JsonDecoder
         thread = JsonDecoder(jsons)
         thread.start()
 

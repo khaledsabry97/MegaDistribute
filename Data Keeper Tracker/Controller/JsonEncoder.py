@@ -3,6 +3,7 @@ import json
 import os
 
 from Connections.SenderController import SenderController
+from Data.data import Data
 
 
 class JsonEncoder:
@@ -39,7 +40,7 @@ class JsonEncoder:
         self.send(receiverIp, receiverPort, jsons)
 
     def duplicateVideo(self,user_id,file_name,receiverIp,receiverPort):
-        currentPath = "[" + str(user_id) + "] "+file_name+".mp4"
+        currentPath = "./" + str(Data.id) + "/" + "[" + str(user_id) + "] " + file_name + ".mp4"
         with open(currentPath, "rb") as binary_file:
             # Seek a specific position in the file and read N bytes
             byte = 0

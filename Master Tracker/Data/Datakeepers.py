@@ -15,10 +15,10 @@ class DataKeepers:
     def inialize():
         dks[1] = [0,"localhost" ]
         ports[1] = [6000, 6002, 6004]
-        dks[2] = [0, "192.168.0.0" ]
-        ports[2] = [8000, 8002, 8004]
+        dks[2] = [0, "localhost" ]
+        ports[2] = [7000, 7002, 7004]
         dks[3] = [0,"192.168.0.0"  ]
-        ports[3] = [9000, 9002, 9004]
+        ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id
     @staticmethod
@@ -33,7 +33,7 @@ class DataKeepers:
     @staticmethod
     def getRandomPort(id):
         if id in ports:
-            portid = random.randint(1,len(ports[id]))
+            portid = random.randint(1,len(ports[id] )-1)
             return ports[id][portid]
         else:
             print("didn't fint that id")

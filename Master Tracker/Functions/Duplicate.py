@@ -54,7 +54,7 @@ class Duplicate(threading.Thread):
                     receiverPort = DataKeepers.getRandomPort(receiverNodeId)
                     jsonGenerator = JsonEncoder()
                     jsonGenerator.duplicate(currentUserId,currentFileName,senderIp,senderPort,receiverIp,receiverPort)
-                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName)
+                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName,234324)
 
         DatabaseController.deleteDuplicateMoreThan6HoursNoSuccess()
 

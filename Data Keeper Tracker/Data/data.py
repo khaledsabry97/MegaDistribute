@@ -3,11 +3,12 @@ import random
 
 class Data:
 
+    global id
+    id = 1
     def __init__(self):
         self.ip = "localhost"
         self.masterIp = "localhost"
         self.masterPorts = [10000,10002,10004]
-        self.id = 1
 
 
     def getMasterIp(self):
@@ -21,4 +22,4 @@ class Data:
         return self.ip
 
     def getId(self):
-        return self.id
+        return id

@@ -23,6 +23,5 @@ class Data:
 
 
     def getIp(self):
-        hostname = socket.gethostname()
         return (socket.getfqdn())
 
