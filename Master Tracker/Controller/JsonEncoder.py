@@ -26,3 +26,22 @@ class JsonEncoder:
         self.send(senderNodeIp,senderNodePort,jsons)
 
 
+    def uploadReqSuccess(self,nodeIp,nodePort,receiverIp):
+        func = "upload_req_success"
+        sendingMsg = {"func":func,
+                      "node_ip":nodeIp,
+                      "node_port":nodePort}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp,3000,jsons)
+
+    def uploadReqFailed(self,msg,fileName,receiverIp):
+        func = "upload_req_failed"
+        sendingMsg = {"func":func,
+                      "msg":msg,
+                      "file_name":fileName}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(receiverIp,3000,jsons)
+
+

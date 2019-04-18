@@ -37,11 +37,11 @@ class DatabaseController:
 
     #to add file after success upload
     @staticmethod
-    def addFile(userId,nodeId,fileName,sizeOfParts):
+    def addFile(userId,nodeId,fileName,fileSize):
         data = {"user_id":userId,
                 "node_id":nodeId,
                 "file_name":fileName,
-                "size_parts":sizeOfParts,
+                "file_size":fileSize,
                 "current_available":True}
         return DatabaseController.inUpDL(Links.addFileDup, data)
 

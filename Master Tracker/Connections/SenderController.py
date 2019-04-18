@@ -1,10 +1,5 @@
 import threading
-
 import zmq
-import time
-import sys
-
-import requests
 
 from Controller.JsonDecoder import JsonDecoder
 
@@ -26,6 +21,7 @@ class SenderController(threading.Thread):
         socket = context.socket(zmq.REQ)
         link = "tcp://"+self.ip+":"+self.port
         socket.connect(link)
+        socket.RCVTIMEO =10000 #so it suspends if the receiver didn't send a message in the past  10 sec
 
         socket.send_json(self.json)
         jsons = socket.recv_json()

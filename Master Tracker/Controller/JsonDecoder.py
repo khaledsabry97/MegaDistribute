@@ -2,6 +2,7 @@ import json
 import threading
 
 from Connections.SenderController import SenderController
+from Functions import Upload
 
 
 class JsonDecoder(threading.Thread):
@@ -14,8 +15,36 @@ class JsonDecoder(threading.Thread):
 
 
     def Decide(self):
-        func = self.jsons["func"]
-        if(func == "hello"):
-            pass
+        jsons = self.jsons
+        func = jsons["func"]
+
+        if(func == "upload_request"):
+            user_id = jsons["user_id"]
+            file_name = jsons["file_name"]
+            client_ip = jsons["client_ip"]
+
+            upload = Upload()
+            upload.uploadRequest(user_id,file_name,client_ip)
+
+        elif(func == "upload_complete"):
+            user_id = jsons["user_id"]
+            file_size = jsons["file_size"]
+            file_name= jsons["file_name"]
+            node_id= jsons["node_id"]
+
+            upload = Upload()
+            upload.uploadComplete(user_id,file_name,file_size,node_id)
+
+        elif(func =="duplicate_complete"):
+            user_id = jsons["user_id"]
+            file_size = jsons["file_size"]
+            file_name = jsons["file_name"]
+
+            data = Data()
+            jsonEncoder = JsonEncoder()
+            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, data.getId(), data.getMasterIp(),
+                                        data.getMasterPort())
+
+        elif (func == "duplicate_complete"):
 
 
