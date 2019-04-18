@@ -1,10 +1,5 @@
 import threading
-
 import zmq
-import time
-import sys
-
-import requests
 
 from Controller.JsonDecoder import JsonDecoder
 
@@ -26,7 +21,7 @@ class SenderController(threading.Thread):
         socket = context.socket(zmq.REQ)
         link = "tcp://"+self.ip+":"+self.port
         socket.connect(link)
-        socket.setsockopt
+        socket.setsockopt()
 
         socket.send_json(self.json)
         jsons = socket.recv_json()

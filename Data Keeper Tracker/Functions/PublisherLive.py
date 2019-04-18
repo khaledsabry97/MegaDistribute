@@ -24,5 +24,6 @@ class PublisherLive(threading.Thread):
         socket.bind("tcp://*:7001")
         while True:
             data = Data()
+            print(data.getId())
             socket.send_string(str(data.getId()))
             time.sleep(1)

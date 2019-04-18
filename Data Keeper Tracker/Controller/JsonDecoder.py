@@ -1,8 +1,7 @@
 import json
 import threading
 
-from Connections.SenderController import SenderController
-from Controller import JsonEncoder
+
 from Functions.FileSystem import FileSystem
 from Data.data import Data
 
@@ -19,7 +18,7 @@ class JsonDecoder(threading.Thread):
         jsons = self.jsons
         func = jsons["func"]
 
-        if(func == "upload"):
+        if(func == "upload" or func == "duplicate"):
             current_size = jsons["current_size"]
             video = jsons["video"]
             user_id = jsons["user_id"]
@@ -32,6 +31,7 @@ class JsonDecoder(threading.Thread):
             file_size = jsons["file_size"]
             file_name= jsons["file_name"]
             data = Data()
+            from Controller.JsonEncoder import JsonEncoder
             jsonEncoder = JsonEncoder()
             jsonEncoder.uploadCompleted(user_id,file_name,file_size,data.getId(),data.getMasterIp(),data.getMasterPort())
 

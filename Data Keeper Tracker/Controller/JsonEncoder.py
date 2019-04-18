@@ -52,7 +52,7 @@ class JsonEncoder:
 
                     c = base64.encodebytes(couple_bytes)
                     c = c.decode('ascii')
-                    func = "duplicating"
+                    func = "duplicate"
                     sendingMsg = {"func": func,
                                   "user_id": user_id,
                                   "file_name": file_name,

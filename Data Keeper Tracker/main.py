@@ -1,15 +1,13 @@
 from Connections.ReceiverController import ReceiverController
 from Functions.PublisherLive import PublisherLive
-from listener import por
-from read import Read
 
 
-receiverThread = ReceiverController()
-thread = PublisherLive()
-thread2 = Read()
-thread3 = por()
+receiverThread1 = ReceiverController(6000)
+receiverThread2 = ReceiverController(6002)
+receiverThread3 = ReceiverController(6004)
+publisherThread = PublisherLive()
 
-receiverThread.start()
-thread.start()
-thread2.start()
-thread3.start()
+receiverThread1.start()
+receiverThread2.start()
+receiverThread3.start()
+publisherThread.start()
