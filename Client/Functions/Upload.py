@@ -40,3 +40,9 @@ class Upload:
         jsonEncoder = JsonEncoder()
         jsonEncoder.uploadReq(data.userId,data.fileName,data.getIp(),data.getMasterIp(),data.getMasterPort())
 
+
+    def changeFileName(self,msg):
+        print(msg)
+        #call the io msg
+        self.sendUploadReq()
+

@@ -25,6 +25,11 @@ class JsonDecoder(threading.Thread):
             upload = Upload()
             upload.uploadFile(node_ip,node_port)
 
+        elif(func == "upload_req_failed"):
+            msg = jsons["msg"]
+
+            upload = Upload()
+            upload.changeFileName(msg)
         elif (func == "download_request"):
             user_id = jsons["user_id"]
             client_ip = jsons["client_ip"]
@@ -38,5 +43,6 @@ class JsonDecoder(threading.Thread):
             client_ip = jsons["client_ip"]
             download = Download()
             download.downloadFile(user_id,file_name,client_ip)
+
 
 

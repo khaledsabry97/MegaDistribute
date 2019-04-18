@@ -36,7 +36,7 @@ class Upload:
     def changeUserName(self,fileName,clientIp):
         msg = "you have the same file name in the directory, please change your file name"
         jsonEncoder = JsonEncoder()
-        jsonEncoder.uploadReqSuccess(msg, fileName, clientIp)
+        jsonEncoder.uploadReqFailed(msg, fileName, clientIp)
 
 
     def uploadComplete(self,user_id,file_name,fileSize,nodeId):
