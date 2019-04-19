@@ -60,7 +60,7 @@ class Duplicate(threading.Thread):
 
 
     def duplicateComplete(self,userId,fileName,fileSize,nodeId):
-        DatabaseController.updateDuplication(userId,nodeId,fileName)
+        DatabaseController.updateDuplication(userId,nodeId,fileSize,fileName)
 
 
 

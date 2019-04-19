@@ -91,10 +91,11 @@ class DatabaseController:
         return DatabaseController.inUpDL(Links.deleteNoDuplicationHappend)
 
     @staticmethod
-    def updateDuplication(userId,nodeId,fileName):
+    def updateDuplication(userId,nodeId,fileSize,fileName):
         data = {"user_id":userId,
                 "node_id":nodeId,
-                "file_name":fileName}
+                "file_name":fileName,
+                "file_size":fileSize}
         return DatabaseController.inUpDL(Links.updateDuplication,data)
 
     # Duplication Methods#

@@ -10,18 +10,20 @@ class Data:
     userId = 1
     ip = " "
     def __init__(self):
-        self.masterIp = "localhost"
-        self.masterPorts = [10000,10002,10004]
+     pass
 
+    @staticmethod
+    def getMasterIp():
+        masterIp = "localhost"
+        return masterIp
 
-    def getMasterIp(self):
-        return self.masterIp
+    @staticmethod
+    def getMasterPort():
+        masterPorts = [10000, 10002, 10004]
+        random.shuffle(masterPorts)  # randomize the array of nodes
+        return masterPorts[0]
 
-    def getMasterPort(self):
-        random.shuffle(self.masterPorts)  # randomize the array of nodes
-        return self.masterPorts[0]
-
-
-    def getIp(self):
+    @staticmethod
+    def getIp():
         return (socket.getfqdn())
 

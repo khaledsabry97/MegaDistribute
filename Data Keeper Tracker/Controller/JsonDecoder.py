@@ -31,9 +31,8 @@ class JsonDecoder(threading.Thread):
             user_id = jsons["user_id"]
             file_size = jsons["file_size"]
             file_name= jsons["file_name"]
-            data = Data()
             jsonEncoder = JsonEncoder()
-            jsonEncoder.uploadCompleted(user_id,file_name,file_size,data.getId(),data.getMasterIp(),data.getMasterPort())
+            jsonEncoder.uploadCompleted(user_id,file_name,file_size,Data.id,Data.getMasterIp(),Data.getMasterPort())
 
         elif(func =="duplicate_request"):
             user_id = jsons["user_id"]
@@ -49,10 +48,9 @@ class JsonDecoder(threading.Thread):
             file_size = jsons["file_size"]
             file_name = jsons["file_name"]
 
-            data = Data()
             jsonEncoder = JsonEncoder()
-            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, data.getId(), data.getMasterIp(),
-                                        data.getMasterPort())
+            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, Data.id, Data.getMasterIp(),
+                                        Data.getMasterPort())
 
 
 

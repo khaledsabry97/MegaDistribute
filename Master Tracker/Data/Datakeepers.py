@@ -17,7 +17,7 @@ class DataKeepers:
         ports[1] = [6000, 6002, 6004]
         dks[2] = [0, "localhost" ]
         ports[2] = [7000, 7002, 7004]
-        dks[3] = [0,"192.168.0.0"  ]
+        dks[3] = [0,"localhost"  ]
         ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id
