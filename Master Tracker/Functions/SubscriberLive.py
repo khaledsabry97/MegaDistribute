@@ -33,5 +33,4 @@ class SubscriberLive(threading.Thread):
         while(True):
             s = socket.recv_string()
             DataKeepers.updateTime(int(s))
-            print(s)
 

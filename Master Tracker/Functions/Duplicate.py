@@ -49,6 +49,7 @@ class Duplicate(threading.Thread):
                 senderPort = DataKeepers.getRandomPort(senderNodeId)
                 newNodeIdList,_= DataKeepers.getAliveDataNodesExclude(nodeIds)
                 for k in range(len(newNodeIdList)):
+                    print("[Duplicating] Node " + str(senderNodeId)+ " to "+ str(newNodeIdList[k]))
                     receiverNodeId = newNodeIdList[k]
                     receiverIp = DataKeepers.getDataNodeIp(receiverNodeId)
                     receiverPort = DataKeepers.getRandomPort(receiverNodeId)
@@ -60,6 +61,7 @@ class Duplicate(threading.Thread):
 
 
     def duplicateComplete(self,userId,fileName,fileSize,nodeId):
+        print("[Duplicate Complete] Node "+str(nodeId))
         DatabaseController.updateDuplication(userId,nodeId,fileSize,fileName)
 
 
