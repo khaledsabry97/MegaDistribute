@@ -23,10 +23,11 @@ class FileSystem:
             os.makedirs(str(Data.id))
 
 
-        #if(os.path.exists(currentPath)):
-           # size = os.path.getsize(currentPath)
-            #if size != current_size:
-                #mode = "w"
+        if(os.path.exists(currentPath)):
+            size = os.path.getsize(currentPath)
+            if size != current_size:
+                print(str(size) + " : "+str(current_size))
+                mode = "wb"
 
 
 

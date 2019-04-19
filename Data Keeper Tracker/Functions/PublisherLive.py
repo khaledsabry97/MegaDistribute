@@ -24,6 +24,6 @@ class PublisherLive(threading.Thread):
         link = "tcp://*:"+str(5006+Data.id*1000)
         socket.bind(link)
         while True:
-            print(Data.id)
+            #print(Data.id)
             socket.send_string(str(Data.id))
             time.sleep(1)

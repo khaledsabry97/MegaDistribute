@@ -49,19 +49,19 @@ class Duplicate(threading.Thread):
                 senderPort = DataKeepers.getRandomPort(senderNodeId)
                 newNodeIdList,_= DataKeepers.getAliveDataNodesExclude(nodeIds)
                 for k in range(len(newNodeIdList)):
-                    print("[Duplicating] Node " + str(senderNodeId)+ " to "+ str(newNodeIdList[k]))
+                    print("[Duplicating] Node " + str(senderNodeId)+ " to "+ str(newNodeIdList[k]) + " file name : "+ str(currentFileName))
                     receiverNodeId = newNodeIdList[k]
                     receiverIp = DataKeepers.getDataNodeIp(receiverNodeId)
                     receiverPort = DataKeepers.getRandomPort(receiverNodeId)
                     jsonGenerator = JsonEncoder()
+                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName,0)
                     jsonGenerator.duplicate(currentUserId,currentFileName,senderIp,senderPort,receiverIp,receiverPort)
-                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName,234324)
 
         DatabaseController.deleteDuplicateMoreThan6HoursNoSuccess()
 
 
     def duplicateComplete(self,userId,fileName,fileSize,nodeId):
-        print("[Duplicate Complete] Node "+str(nodeId))
+        print("[Duplicate Complete] Node "+str(nodeId)+ " file name : "+ str(fileName))
         DatabaseController.updateDuplication(userId,nodeId,fileSize,fileName)
 
 

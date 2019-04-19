@@ -14,7 +14,7 @@ class JsonEncoder:
 
     def send(self,ip,port,json):
         thread = SenderController(ip,port,json)
-        thread.start()
+        thread.run()
 
 
     def uploadCompleted(self,user_id,file_name,file_size,node_id,receiverIp,receiverPort):

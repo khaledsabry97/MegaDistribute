@@ -24,7 +24,7 @@ class DataKeepers:
     @staticmethod
     def updateTime(id):
         if id in dks:
-            print("Data Node "+str(id)+" : "+str(dks[id][0])+" to "+str(int(time.time() * 1000)))
+            #print("Data Node "+str(id)+" : "+str(dks[id][0])+" to "+str(int(time.time() * 1000)))
             dks[id][0] = int(time.time() * 1000)
         else:
             print("didn't fint that id")
@@ -60,7 +60,7 @@ class DataKeepers:
             random.shuffle(arr) #randomize the array of nodes
             return arr,True
         else:
-            print("no nodes found")
+            #print("no nodes found")
             return [],False
 
     #pass node id and see if it's alive or not

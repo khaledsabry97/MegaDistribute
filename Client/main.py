@@ -33,7 +33,7 @@ def usr_action(start):
         if x == 1:
             #'E:/Projects/DS_CFD/Client/adele.mp4'
              #data.currentFilePath = getFilePath()
-             Data.currentFilePath =  'E:/Projects/DS_CFD/Client/adele.mp4'
+             Data.currentFilePath =  'E:/Projects/DS_CFD/Client/fast.mov'
              Data.fileName = input("what is the name of your file : ")
              upload = Upload()
              upload.sendUploadReq()

@@ -35,10 +35,11 @@ class JsonEncoder:
         jsons = json.dumps(sendingMsg)
         self.send(receiverIp,3000,jsons)
 
-    def uploadReqFailed(self,msg,fileName,receiverIp):
+    def uploadReqFailed(self,msg,reason,fileName,receiverIp):
         func = "upload_req_failed"
         sendingMsg = {"func":func,
                       "msg":msg,
+                      "reason":reason,
                       "file_name":fileName}
 
         jsons = json.dumps(sendingMsg)
