@@ -6,8 +6,8 @@ class Data:
     def __init__(self):
         self.ip = ""
         self.masterIp = ""
-        self.masterPorts = [6000,6002,6004]
-        self.id = 1
+        self.masterPorts = [10000,6002,6004]
+        self.id = 2
 
 
     def getMasterIp(self):
