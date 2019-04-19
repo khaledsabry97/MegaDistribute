@@ -14,17 +14,17 @@ class DataKeepers:
     @staticmethod
     def inialize():
         dks[1] = [0,"localhost" ]
-        ports[1] = [7000, 7002, 7004]
-        dks[2] = [0, "192.168.0.0" ]
-        ports[2] = [8000, 8002, 8004]
-        dks[3] = [0,"192.168.0.0"  ]
-        ports[3] = [9000, 9002, 9004]
+        ports[1] = [6000, 6002, 6004]
+        dks[2] = [0, "localhost" ]
+        ports[2] = [7000, 7002, 7004]
+        dks[3] = [0,"localhost"  ]
+        ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id
     @staticmethod
     def updateTime(id):
         if id in dks:
-            print("Data Node "+str(id)+" : "+str(dks[id][0])+" to "+str(int(time.time() * 1000)))
+            #print("Data Node "+str(id)+" : "+str(dks[id][0])+" to "+str(int(time.time() * 1000)))
             dks[id][0] = int(time.time() * 1000)
         else:
             print("didn't fint that id")
@@ -33,7 +33,7 @@ class DataKeepers:
     @staticmethod
     def getRandomPort(id):
         if id in ports:
-            portid = random.randint(1,len(ports[id]))
+            portid = random.randint(1,len(ports[id] )-1)
             return ports[id][portid]
         else:
             print("didn't fint that id")
@@ -60,7 +60,7 @@ class DataKeepers:
             random.shuffle(arr) #randomize the array of nodes
             return arr,True
         else:
-            print("no nodes found")
+            #print("no nodes found")
             return [],False
 
     #pass node id and see if it's alive or not

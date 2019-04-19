@@ -32,7 +32,7 @@ class Duplicate(threading.Thread):
             fileMap = userIdMap[userId]
             if fileName not in fileMap:
                 userIdMap[userId][fileName]= []
-            userIdMap[userId][fileName].append(nodeId)
+            userIdMap[userId][fileName].append(int(nodeId))
 
         userIdKeys = list(userIdMap.keys())
         for i in range(len(userIdKeys)):
@@ -49,18 +49,20 @@ class Duplicate(threading.Thread):
                 senderPort = DataKeepers.getRandomPort(senderNodeId)
                 newNodeIdList,_= DataKeepers.getAliveDataNodesExclude(nodeIds)
                 for k in range(len(newNodeIdList)):
+                    print("[Duplicating] Node " + str(senderNodeId)+ " to "+ str(newNodeIdList[k]) + " file name : "+ str(currentFileName))
                     receiverNodeId = newNodeIdList[k]
                     receiverIp = DataKeepers.getDataNodeIp(receiverNodeId)
                     receiverPort = DataKeepers.getRandomPort(receiverNodeId)
                     jsonGenerator = JsonEncoder()
+                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName,0)
                     jsonGenerator.duplicate(currentUserId,currentFileName,senderIp,senderPort,receiverIp,receiverPort)
-                    DatabaseController.addDuplicateNoSuccess(currentUserId,receiverNodeId,currentFileName)
 
         DatabaseController.deleteDuplicateMoreThan6HoursNoSuccess()
 
 
     def duplicateComplete(self,userId,fileName,fileSize,nodeId):
-        DatabaseController.updateDuplication(userId,nodeId,fileName)
+        print("[Duplicate Complete] Node "+str(nodeId)+ " file name : "+ str(fileName))
+        DatabaseController.updateDuplication(userId,nodeId,fileSize,fileName)
 
 
 

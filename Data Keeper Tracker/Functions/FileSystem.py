@@ -8,18 +8,26 @@ import sys
 
 import requests
 
+from Data.data import Data
+
+
 class FileSystem:
     def __init__(self):
         pass
     def write(self,current_size,video,user_id,file_name):
         c = video.encode('ascii')
         c = base64.decodebytes(c)
-        currentPath = "[" + str(user_id) + "] "+file_name+".mp4"
+        currentPath = "./"+str(Data.id)+"/"+"[" + str(user_id) + "] "+file_name+".mp4"
         mode = "ab"
+        if (not os.path.exists(str(Data.id))):
+            os.makedirs(str(Data.id))
+
+
         if(os.path.exists(currentPath)):
             size = os.path.getsize(currentPath)
             if size != current_size:
-                mode = "w"
+                print(str(size) + " : "+str(current_size))
+                mode = "wb"
 
 
 

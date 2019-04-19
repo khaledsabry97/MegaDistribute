@@ -9,8 +9,11 @@ class SubscriberLive(threading.Thread):
 
     def __init__(self):
         threading.Thread.__init__(self)
-        idIp = DataKeepers.getDataNodeIp(1) + ":" + str(7001)
-        self.ips = [idIp]
+        idIp1 = DataKeepers.getDataNodeIp(1) + ":" + str(5006+1*1000)
+        idIp2 = DataKeepers.getDataNodeIp(2) + ":" + str(5006+2*1000)
+        idIp3 = DataKeepers.getDataNodeIp(3) + ":" + str(5006+3*1000)
+
+        self.ips = [idIp1,idIp2,idIp3]
 
     def run(self):
         self.sub()
@@ -30,5 +33,4 @@ class SubscriberLive(threading.Thread):
         while(True):
             s = socket.recv_string()
             DataKeepers.updateTime(int(s))
-            print(s)
 

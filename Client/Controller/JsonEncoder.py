@@ -11,7 +11,7 @@ class JsonEncoder:
 
     def send(self,ip,port,json):
         thread = SenderController(ip,port,json)
-        thread.start()
+        return thread.run()
 
     def uploadReq(self,user_id,file_name,client_ip,ip,port):
         func = "upload_request"
@@ -34,7 +34,7 @@ class JsonEncoder:
                       }
 
         jsons = json.dumps(sendingMsg)
-        self.send(nodeIp, nodePort, jsons)
+        return self.send(nodeIp, nodePort, jsons)
 
 
 

@@ -22,10 +22,11 @@ class DatabaseController:
 
     #for all select queries
     def select(link,data={}):
-        r = requests.post(url=link, data=data)
-        result = r.json()
-        array = []
         try:
+            r = requests.post(url=link, data=data)
+            result = r.json()
+            array = []
+
             if (result["server_response"] != "server down" and result["server_response"] != False):
                 array = result["server_response"]
         except:
@@ -77,11 +78,11 @@ class DatabaseController:
 
 
     @staticmethod
-    def addDuplicateNoSuccess(userId,nodeId,fileName,sizeOfParts):
+    def addDuplicateNoSuccess(userId,nodeId,fileName,file_size):
         data = {"user_id":userId,
                 "node_id":nodeId,
                 "file_name":fileName,
-                "size_parts":sizeOfParts,
+                "file_size":file_size,
                 "current_available":False}
         return DatabaseController.inUpDL(Links.addFileDup, data)
 
@@ -90,10 +91,11 @@ class DatabaseController:
         return DatabaseController.inUpDL(Links.deleteNoDuplicationHappend)
 
     @staticmethod
-    def updateDuplication(userId,nodeId,fileName):
+    def updateDuplication(userId,nodeId,fileSize,fileName):
         data = {"user_id":userId,
                 "node_id":nodeId,
-                "file_name":fileName}
+                "file_name":fileName,
+                "file_size":fileSize}
         return DatabaseController.inUpDL(Links.updateDuplication,data)
 
     # Duplication Methods#
