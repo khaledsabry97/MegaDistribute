@@ -25,5 +25,6 @@ class Data:
 
     @staticmethod
     def getIp():
+        ip = socket.gethostbyname(socket.gethostname())
         return (socket.getfqdn())
 

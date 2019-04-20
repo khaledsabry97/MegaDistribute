@@ -141,7 +141,7 @@ class DataKeepers:
             if DataKeepers.checkIfAlive(nodeIds[i]):
                 for j in range(len(ports[nodeIds[i]])):
                     ports.append(ports[nodeIds[i]][j])
-                    ips.append(nodeIds[i])
+                    ips.append(DataKeepers.getDataNodeIp(nodeIds[i]))
 
         if len(ports) >= size:
             return ips[0,size],ports[0,size],True,size
