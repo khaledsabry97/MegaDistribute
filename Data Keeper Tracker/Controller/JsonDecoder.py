@@ -49,8 +49,7 @@ class JsonDecoder(threading.Thread):
             file_name = jsons["file_name"]
 
             jsonEncoder = JsonEncoder()
-            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, Data.id, Data.getMasterIp(),
-                                        Data.getMasterPort())
+            jsonEncoder.duplicateCompleted(user_id, file_name, file_size, Data.id, Data.getMasterIp(),Data.getMasterPort())
 
 
 

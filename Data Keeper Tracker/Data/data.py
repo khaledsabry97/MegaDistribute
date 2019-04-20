@@ -23,5 +23,3 @@ class Data:
     @staticmethod
     def getLocalIp(self):
         return (socket.getfqdn())
-
-
