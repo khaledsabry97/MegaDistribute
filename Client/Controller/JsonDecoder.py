@@ -1,6 +1,8 @@
 import json
 import threading
 
+from Functions.Download import Download
+from Functions.FileSystem import FileSystem
 from Functions.Upload import Upload
 
 #to decode the message from receiver
@@ -31,19 +33,32 @@ class JsonDecoder(threading.Thread):
 
             upload = Upload()
             upload.uploadError(msg, reason)
-        elif (func == "download_request"):
-            user_id = jsons["user_id"]
-            client_ip = jsons["client_ip"]
 
-            download = Download()
-            download.showFiles(user_id,client_ip)
 
-        elif (func == "download_file"):
-            user_id = jsons["user_id"]
-            file_name = jsons["file_name"]
-            client_ip = jsons["client_ip"]
-            download = Download()
-            download.downloadFile(user_id,file_name,client_ip)
+
+        elif(func=="download_ips_ports"):   #send request to keepers
+            ips=jsons["ips"]
+            ports=jsons["ports"]
+            download=Download()
+            download.send_download_request(ips,ports)
+
+        elif (func=="downloading_part")    :
+           user_id=jsons["user_id"]
+           file_name=jsons["file_name"]
+           current_size=jsons[ "current_size"]
+           video=jsons["video"]
+           current_part=jsons[ "current_part"]
+
+           fileSystem = FileSystem()
+           fileSystem.write_part(current_size, video, user_id, file_name,current_part)
+           download = Download()
+           download.check()
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,6 @@
+import base64
 import json
+import os
 import threading
 
 
@@ -50,6 +52,18 @@ class JsonDecoder(threading.Thread):
 
             jsonEncoder = JsonEncoder()
             jsonEncoder.duplicateCompleted(user_id, file_name, file_size, Data.id, Data.getMasterIp(),Data.getMasterPort())
+
+        elif(func=="download_request"):
+            user_id = jsons["user_id"]
+            file_name = jsons["file_name"]
+            receiverIp = jsons["client_ip"]
+            receiverPort = 3000
+            byte = jsons["start_index"]
+            bytesToRead = jsons["chunk_size"]
+            current_part=jsons["current_part"]
+            jsonEncoder=JsonEncoder()
+            jsonEncoder.downloadvideo(user_id,file_name,receiverIp,receiverPort,byte,bytesToRead,current_part)
+
 
 
 

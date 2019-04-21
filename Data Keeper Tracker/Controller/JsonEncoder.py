@@ -44,7 +44,7 @@ class JsonEncoder:
         with open(currentPath, "rb") as binary_file:
             # Seek a specific position in the file and read N bytes
             byte = 0
-            bytesToRead = 1024 *1024
+            bytesToRead = 1024 * 1024
             size = os.path.getsize(currentPath)
             while(byte < size):
                     binary_file.seek(0, 1)  # Go to beginning of the file
@@ -83,6 +83,30 @@ class JsonEncoder:
 
         jsons = json.dumps(sendingMsg)
         self.send(receiverIp, receiverPort, jsons)
+
+
+    def  downloadvideo(self,user_id,file_name,receiverIp,receiverPort,byte,bytesToRead,current_part):
+            currentPath = "./" + str(Data.id) + "/" + "[" + str(user_id) + "] " + file_name + ".mp4"
+            with open(currentPath, "rb") as binary_file:
+                # Seek a specific position in the file and read N bytes
+
+                size = os.path.getsize(currentPath)
+
+                binary_file.seek(byte, 1)  # Go to beginning of the file
+                couple_bytes = binary_file.read(bytesToRead)
+                c = base64.encodebytes(couple_bytes)
+                c = c.decode('ascii')
+                func = "downloading_part"
+                sendingMsg = {"func": func,
+                              "user_id": user_id,
+                              "file_name": file_name,
+                               "current_size": bytesToRead,
+                               "video": c,
+                              "current_part":current_part
+                                  }
+
+                jsons = json.dumps(sendingMsg)
+                self.send(receiverIp, receiverPort, jsons)
 
 
 

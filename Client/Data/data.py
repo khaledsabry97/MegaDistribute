@@ -4,11 +4,14 @@ import socket
 
 class Data:
 
-    global currentFilePath,fileName,userId,ip
+    global currentFilePath,fileName,userId,ip,path_array,no_ports
     currentFilePath  = ""
     fileName = ""
+    path_array = [""]*6
     userId = 1
     ip = " "
+    no_ports=0
+
     def __init__(self):
      pass
 

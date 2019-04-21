@@ -52,7 +52,7 @@ class JsonDecoder(threading.Thread):
             download = Download()
             download.showFiles(user_id,client_ip)
 
-        elif (func == "download_file"):
+        elif (func == "download_file"):   # request comes from client to download a file
             user_id = jsons["user_id"]
             file_name = jsons["file_name"]
             client_ip = jsons["client_ip"]
