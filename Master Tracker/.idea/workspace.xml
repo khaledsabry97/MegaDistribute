@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9036f2e8-a1d0-444e-8d99-d4a1bc6839ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/Connections/DataBaseController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/Data/Links.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/DatabaseBackupServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/Data Keeper Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/Data Keeper Tracker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/SubscriberLive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="780">
               <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -31,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
+            <state relative-caret-position="2548">
               <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -52,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/JsonEncoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="1716">
               <caret line="68" column="24" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="24" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -64,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="182">
               <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -76,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/Duplicate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="26">
+              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -88,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="-338">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="47" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -100,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="260">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
               </folding>
@@ -112,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/Download.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="598">
               <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
@@ -124,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/Upload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-849">
+            <state relative-caret-position="182">
               <caret line="9" column="21" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
@@ -166,7 +179,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Controller/JsonDecoder.py" />
         <option value="$PROJECT_DIR$/Data/data.py" />
-        <option value="$PROJECT_DIR$/Connections/DataBaseController.py" />
         <option value="$PROJECT_DIR$/Functions/SubscriberLive.py" />
         <option value="$PROJECT_DIR$/Connections/SenderController.py" />
         <option value="$PROJECT_DIR$/Connections/ReceiverController.py" />
@@ -175,14 +187,15 @@
         <option value="$PROJECT_DIR$/Functions/Upload.py" />
         <option value="$PROJECT_DIR$/Data/Datakeepers.py" />
         <option value="$PROJECT_DIR$/Data/Links.py" />
+        <option value="$PROJECT_DIR$/Connections/DataBaseController.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="891" />
-    <option name="y" value="138" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -192,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,14 +320,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="976" height="1096" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23824786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45597485" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45171338" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38784066" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,20 +473,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/JsonEncoder.py">
+    <entry file="file://$PROJECT_DIR$/Functions/SubscriberLive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="68" column="24" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="24" />
+        <state relative-caret-position="780">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/data.py">
+    <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="2548">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -487,20 +500,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
+    <entry file="file://$PROJECT_DIR$/Controller/JsonEncoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="1716">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Functions/Download.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="598">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/Upload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
@@ -509,48 +552,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions/Duplicate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="26">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/SubscriberLive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/Upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-849">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="-338">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="47" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

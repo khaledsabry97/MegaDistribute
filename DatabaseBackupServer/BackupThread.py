@@ -2,8 +2,8 @@ import threading
 import time
 import requests
 
-from DatabaseBackupServer.InsertThread import InsertThread
-from DatabaseBackupServer.links import Links
+from InsertThread import InsertThread
+from links import Links
 
 #to check and insert the indices from backup database to slaves databases
 class BackupThread(threading.Thread):

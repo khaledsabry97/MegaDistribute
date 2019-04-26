@@ -1,7 +1,7 @@
 import threading
 import requests
 
-from DatabaseBackupServer.links import Links
+from links import Links
 
 #to check connectivity to specific slave database server and insert in the database what was found in the backup database
 class InsertThread(threading.Thread):
