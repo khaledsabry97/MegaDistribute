@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3a06ff-8340-406a-ab60-f8ab3a4c1c88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Connections/DataBaseController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Links.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/DatabaseBackupServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="152">
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="74" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -277,6 +262,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12539515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -284,7 +270,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3301887" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39252338" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39252338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
@@ -556,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="152">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="74" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

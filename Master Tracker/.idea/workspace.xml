@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9036f2e8-a1d0-444e-8d99-d4a1bc6839ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/Connections/DataBaseController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/Data/Links.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/DatabaseBackupServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/BackupThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/InsertThread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="976" />
@@ -320,7 +305,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="976" height="1096" extended-state="1" />
+    <frame x="-8" y="-8" width="976" height="1096" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
