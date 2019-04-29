@@ -1,7 +1,7 @@
 import threading
 import requests
 
-from DatabaseBackupServer.links import Links
+from links import Links
 
 #to check connectivity to specific slave database server and insert in the database what was found in the backup database
 class InsertThread(threading.Thread):
@@ -20,7 +20,7 @@ class InsertThread(threading.Thread):
     def checkIfConnected(self):
         data = {"server_id": self.serverId}
         try:
-            r = requests.post(url=Links.checkConnection, data=data)
+            r = requests.post(url=Links.checkConnection, data=data,timeout=(1, 1))
             result = r.json()
 
             if result["server_response"] == True:
@@ -47,7 +47,7 @@ class InsertThread(threading.Thread):
     #send the data to its specific database server
     def send(self, data):
         # it 'll send an insert and delete if success from backup database
-        r = requests.post(url=Links.insertBackupToSlave, data=data)
+        r = requests.post(url=Links.insertBackupToSlave, data=data,timeout=(2, 2))
         result = r.json()
 
 
