@@ -70,7 +70,8 @@ class JsonEncoder:
         func = "download_ips_ports"
         sendingMsg = {"func":func,
                       "ips":ips,
-                      "ports":ports}
+                      "ports":ports,
+                      }
 
         jsons = json.dumps(sendingMsg)
         self.send(receiverIp,3000,jsons)

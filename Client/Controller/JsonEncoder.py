@@ -1,6 +1,8 @@
 import json
+import os
 
 from Connections.SenderController import SenderController
+from Data import data
 
 
 class JsonEncoder:
@@ -23,6 +25,18 @@ class JsonEncoder:
         jsons = json.dumps(sendingMsg)
         self.send(ip,port,jsons)
 
+    def download_req(self, user_id, file_name, client_ip,ip,port,start_ind,size,current_part):# download request to keeper
+        func = "download_request"
+        sendingMsg = {"func": func,
+                      "user_id": user_id,
+                      "file_name": file_name,
+                      "client_ip": client_ip,
+                      "start_index":start_ind,
+                      "chunk_size":size,
+                      "current_part":current_part}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(ip, port, jsons)
 
     def upload(self,userId,fileName,vid,currentSize,nodeIp,nodePort):
         func = "upload"
@@ -49,3 +63,15 @@ class JsonEncoder:
 
         jsons = json.dumps(sendingMsg)
         self.send(nodeIp, nodePort, jsons)
+
+
+    def download_file(self,user_id,file_name,client_ip,ip,port): # request for downloading sent to Master
+        func = "download_file"
+        sendingMsg = {"func":func,
+                      "user_id":user_id,
+                      "file_name":file_name,
+                      "client_ip":client_ip}
+
+        jsons = json.dumps(sendingMsg)
+        self.send(ip,port,jsons)
+
