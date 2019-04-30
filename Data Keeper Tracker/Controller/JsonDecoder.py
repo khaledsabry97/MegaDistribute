@@ -1,7 +1,6 @@
 import json
 import threading
 
-
 from Functions.FileSystem import FileSystem
 from Data.data import Data
 from Controller.JsonEncoder import JsonEncoder
@@ -41,7 +40,8 @@ class JsonDecoder(threading.Thread):
             receiverPort= jsons["receiver_port"]
 
             jsonEncoder = JsonEncoder()
-            jsonEncoder.duplicateVideo(user_id,file_name,receiverIp,receiverPort)
+            threading.Thread(target=jsonEncoder.duplicateVideo, args=(user_id,file_name,receiverIp,receiverPort)).start()
+            #jsonEncoder.duplicateVideo(user_id,file_name,receiverIp,receiverPort)
 
         elif(func =="duplicate_complete"):
             user_id = jsons["user_id"]

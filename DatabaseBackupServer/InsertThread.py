@@ -20,7 +20,7 @@ class InsertThread(threading.Thread):
     def checkIfConnected(self):
         data = {"server_id": self.serverId}
         try:
-            r = requests.post(url=Links.checkConnection, data=data,timeout=(1, 1))
+            r = requests.post(url=Links.checkConnection, data=data,timeout=(2, 2))
             result = r.json()
 
             if result["server_response"] == True:
@@ -34,7 +34,7 @@ class InsertThread(threading.Thread):
         #database available then send the requests
         size = len(self.data)
         for i in range(size):
-            obj = data[i]
+            obj = self.data[i]
             data = {"server_id": obj["server_id"],
                     "user_name": obj["user_name"],
                     "email": obj["email"],

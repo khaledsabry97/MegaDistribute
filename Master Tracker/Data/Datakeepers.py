@@ -13,11 +13,11 @@ class DataKeepers:
 
     @staticmethod
     def inialize():
-        dks[1] = [0,"localhost" ]
+        dks[1] = [0,"192.168.0.102" ]
         ports[1] = [6000, 6002, 6004]
-        dks[2] = [0, "localhost" ]
+        dks[2] = [0, "192.168.0.102" ]
         ports[2] = [7000, 7002, 7004]
-        dks[3] = [0,"localhost"  ]
+        dks[3] = [0,"192.168.0.102"  ]
         ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id

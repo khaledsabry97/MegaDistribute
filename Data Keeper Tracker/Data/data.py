@@ -11,7 +11,7 @@ class Data:
 
     @staticmethod
     def getMasterIp():
-        masterIp = "localhost"
+        masterIp = "192.168.0.102"
         return masterIp
 
     @staticmethod
@@ -22,4 +22,5 @@ class Data:
 
     @staticmethod
     def getLocalIp(self):
-        return (socket.getfqdn())
+        # return (socket.getfqdn())
+        return "192.168.0.102"

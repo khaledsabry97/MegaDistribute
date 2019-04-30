@@ -4,6 +4,7 @@ import os
 
 from Controller.JsonEncoder import JsonEncoder
 from Data.data import Data
+from IO import IO
 
 
 class Upload:
@@ -31,12 +32,13 @@ class Upload:
                 result = jsonEncoder.upload(Data.userId,fileName,c,byte,nodeIp,nodePort) #upload the chunk
                 if(result == "failed"):
                     print("Upload Failed")
+                    IO.functions()
                     return
                 byte += bytesToRead
             print("upload_complete")
             jsonEncoder = JsonEncoder()
             jsonEncoder.uploadComplete(Data.userId, fileName, size, nodeIp, nodePort)
-
+            IO.functions()
 
     def sendUploadReq(self):
         jsonEncoder = JsonEncoder()
@@ -46,7 +48,7 @@ class Upload:
     def uploadError(self, msg,reason):
         print(msg)
         if(reason == "Data Nodes"):
-            pass
+            IO.functions()
         elif(reason == "Found Same Filename"):
             Data.fileName = input("what is the name of your file : ")
             self.sendUploadReq()

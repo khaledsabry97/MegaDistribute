@@ -31,8 +31,8 @@ class ReceiverController(threading.Thread):
                 jsonDecoder = JsonDecoder(jsons) # start the processing decoding method
                 jsonDecoder.run()
                 socket.send_json({"func":"success"})
-            except:
+            except Exception as e:
                 socket.send_json({"func": "failed"})
-                print("error")
+                print(str(e))
 
 

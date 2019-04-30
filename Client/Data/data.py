@@ -9,11 +9,11 @@ class Data:
     fileName = ""
     userId = 1
     ip = " "
-    DatabaseSlavesIp = ["1923.295,28895923,295295"]
+    #DatabaseSlavesIp = ["1923.295,28895923,295295"]
 
     @staticmethod
     def getMasterIp():
-        masterIp = "localhost"
+        masterIp = "192.168.0.102"
         return masterIp
 
     @staticmethod
@@ -25,18 +25,19 @@ class Data:
     @staticmethod
     def getIp():
         ip = socket.gethostbyname(socket.gethostname())
-        return (socket.getfqdn())
+        #return (socket.getfqdn())
+        return "192.168.0.102"
 
 
     @staticmethod
     def getDatabaseSlaveIp():
-        DatabaseSlavesIp = ["192.168.0.105","192.168.0.106","192.168.0.107"]
+        DatabaseSlavesIp = ["192.168.43.201","192.168.43.34","192.168.43.153"]
         random.shuffle(DatabaseSlavesIp)  # randomize the array of nodes
         return DatabaseSlavesIp
 
     @staticmethod
     def getDatabaseMaster():
-        masterDatabaseIp = "localhost"
+        masterDatabaseIp = "192.168.0.102"
         return  masterDatabaseIp
 
 

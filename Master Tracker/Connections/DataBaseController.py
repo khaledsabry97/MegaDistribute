@@ -10,10 +10,11 @@ class DatabaseController:
     #for all inserts, deletes and update queries
     @staticmethod
     def inUpDL(link,data={}):
-        r = requests.post(url=link, data=data)
-        result = r.json()
-
         try:
+            r = requests.post(url=link, data=data)
+            result = r.json()
+
+
             if (result["server_response"] == True):
                 return True
         except:

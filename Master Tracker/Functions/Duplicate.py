@@ -19,11 +19,11 @@ class Duplicate(threading.Thread):
 
     #check periodic if file not in 3 data nodes
     def checkPeriodic(self):
-        array = DatabaseController.getLessThan3Duplication()
+        array = DatabaseController.getLessThan3Duplication() #get all the files that has less than 3 records in the database
         userIdMap = {}
 
         #adding the structure of maps
-        for i in range(len(array)):
+        for i in range(len(array)): #sort them in map inside a map first we make a key by userid then an array of the files he has then an array of nodes that contains these files
             userId = array[i]["user_id"]
             nodeId = array[i]["node_id"]
             fileName = array[i]["file_name"]
@@ -35,13 +35,18 @@ class Duplicate(threading.Thread):
             userIdMap[userId][fileName].append(int(nodeId))
 
         userIdKeys = list(userIdMap.keys())
-        for i in range(len(userIdKeys)):
+        for i in range(len(userIdKeys)): # lets roll on all the userids
             currentUserId = userIdKeys[i]
             fileKeys = list(userIdMap[currentUserId].keys())
-            for j in range(len(fileKeys)):
+            for j in range(len(fileKeys)): #lets get one file and see
                 currentFileName = fileKeys[j]
-                nodeIds = userIdMap[currentUserId][currentFileName]
-                senderNodeId,found = DataKeepers.getNodeIdAliveInclude(nodeIds)
+
+                nodeIds = userIdMap[currentUserId][currentFileName] #get the nodes contains this file
+                currentAvailableNodes = DatabaseController.getNodesContainsFile(int(currentUserId),currentFileName) #get now only current_available of nodes
+                availableNodes = []
+                for i in range(len(currentAvailableNodes)):
+                    availableNodes.append(int(currentAvailableNodes[i]["node_id"]))
+                senderNodeId,found = DataKeepers.getNodeIdAliveInclude(availableNodes) #get alive sender node
                 if found == False:
                     continue
                 senderNodeId = int(senderNodeId)
