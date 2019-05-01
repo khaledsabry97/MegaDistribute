@@ -1,12 +1,6 @@
 import base64
 import os
-import threading
 
-import zmq
-import time
-import sys
-
-import requests
 
 from Data.data import Data
 

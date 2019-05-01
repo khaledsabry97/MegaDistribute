@@ -1,10 +1,7 @@
 import os
 
-from Connections.ReceiverController import ReceiverController
 from Controller.JsonEncoder import JsonEncoder
-from Data import data
 from Data.data import Data
-from Functions.FileSystem import FileSystem
 
 
 class Download:
@@ -12,7 +9,7 @@ class Download:
     def __init__(self):
             pass
 
-    def send_download_request(self,ips,ports):
+    def send_download_request(self,ips,ports): # to the keeper
         Data.no_ports=len(ports)
         Data.path_array=[""]*Data.no_ports
         size = os.path.getsize(Data.currentFilePath) / len(ports)  #size of the chunk
@@ -21,6 +18,14 @@ class Download:
             jsonEncoder=JsonEncoder()
             jsonEncoder.download_req(Data.userId, Data.fileName, Data.ip,ips[x],ports[x],start_ind,size,x)
 
+    def sendDownloadReq(self):     #send to master
+        jsonEncoder = JsonEncoder()
+        jsonEncoder.downloadReq( Data.userId, Data.fileName, Data.getIp(), Data.getMasterIp(), Data.getMasterPort() )
+
+    def downloadError(self, msg):
+        print( msg )
+        Data.fileName = input( "what is the name of your file : " )
+        self.sendDownloadReq()
 
 
     def check(self):

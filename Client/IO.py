@@ -4,6 +4,8 @@ from tkinter import filedialog
 
 from Connections.DataBaseController import DatabaseController
 from Data.data import Data
+from Functions.Download import Download
+from Functions.Show import Show
 from Functions.Upload import Upload
 
 
@@ -83,13 +85,24 @@ class IO:
         def upload():
             # Data.currentFilePath = getFilePath()
             Data.currentFilePath = 'E:/Projects/DS_CFD/Client/fast.mov'
-            Data.fileName = input("what is the name of your file : ")
+            while(Data.fileName=="") :
+             Data.fileName = input("what is the name of your file :  /n")
+
             upload = Upload()
             upload.sendUploadReq()
 
         @staticmethod
         def download():
-            #call the download class
+            #show filenames
+            show=Show()
+            show.snd_shw_req()
+
+            if Data.fileName != "":   #check if user has files
+
+             download = Download ()
+             download.sendDownloadReq ()
+
+
             pass
 
     @staticmethod

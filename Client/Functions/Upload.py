@@ -11,7 +11,7 @@ class Upload:
         pass
 
 
-    def uploadFile(self,nodeIp,nodePort):
+    def uploadFile(self,nodeIp,nodePort):    #to the keeper
 
         currentPath = Data.currentFilePath # ge the path of the file
         fileName = Data.fileName # get name of it
@@ -38,7 +38,7 @@ class Upload:
             jsonEncoder.uploadComplete(Data.userId, fileName, size, nodeIp, nodePort)
 
 
-    def sendUploadReq(self):
+    def sendUploadReq(self):   # to the master
         jsonEncoder = JsonEncoder()
         jsonEncoder.uploadReq(Data.userId,Data.fileName,Data.getIp(),Data.getMasterIp(),Data.getMasterPort())
 
