@@ -2,11 +2,16 @@
 require('connection.php');
 
 
+$user_id = $_POST["user_id"];
+$file_name = $_POST["file_name"];
 
-$user_name = $_POST["user_name"];
-$password = $_POST["password"];
-
-$sql = "SELECT id FROM `users` where user_name = \"$user_name\" and `password` = \"$password\"";
+$sql = "SELECT
+	node_id 
+FROM
+	users 
+WHERE
+	file_name = \"$file_name\" 
+	AND user_id = $user_id and current_available = 1";
 
 $result = mysqli_query($conn ,$sql);
 
@@ -18,11 +23,8 @@ $arrays = array();
 
 	}
 
-	
-	if(count($arrays) != 0)
 	echo json_encode(array("server_response"=>$arrays));
-else
-	echo json_encode(array("server_response"=>false));
+
 
     mysqli_free_result($result);
 $conn->close();

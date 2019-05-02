@@ -3,10 +3,11 @@ require('connection.php');
 
 
 
-$user_name = $_POST["user_name"];
-$password = $_POST["password"];
+$user_id = $_POST["user_id"];
 
-$sql = "SELECT id FROM `users` where user_name = \"$user_name\" and `password` = \"$password\"";
+
+$sql = "SELECT * FROM `users` where user_id = $user_id
+GROUP BY file_name order by date_created";
 
 $result = mysqli_query($conn ,$sql);
 
@@ -18,11 +19,8 @@ $arrays = array();
 
 	}
 
-	
-	if(count($arrays) != 0)
 	echo json_encode(array("server_response"=>$arrays));
-else
-	echo json_encode(array("server_response"=>false));
+
 
     mysqli_free_result($result);
 $conn->close();

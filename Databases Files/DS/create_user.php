@@ -3,9 +3,9 @@ header('Content-Type: application/json;charset=utf-8');
 require('database_servers.php');
 
 //prepare the sql 
-$user_name = $_GET["user_name"];
-$email = $_GET["email"];
-$password = $_GET["password"];
+$user_name = $_POST["user_name"];
+$email = $_POST["email"];
+$password = $_POST["password"];
 
 $sql = "INSERT INTO users(user_name,email,password) VALUES(\"$user_name\", \"$email\",\"$password\")";
 
@@ -28,11 +28,9 @@ if(!$db_master)
 
 
 $inserted = false;
-echo $inserted;
 if($db_master)
 {
 
-//exit($sql);
 	if(mysqli_query($db_master ,$sql))
 		$inserted = true;
 
@@ -40,7 +38,7 @@ if($db_master)
 
 if($inserted)
 	{	
-		echo json_encode(array("server_response"=>"INSERTED"));
+		echo json_encode(array("server_response"=>True));
 		$server_id = 1;
 		require('./backup/insert_back_up.php'); // this to insert in the back_up database
 
@@ -52,7 +50,7 @@ if($inserted)
 				
 	}
 	else
-		  	  	echo json_encode(array("server_response"=>"NOT_INSERTED")); //another username with the same name was found
+		  	  	echo json_encode(array("server_response"=>False)); //another username with the same name was found
 
 
 

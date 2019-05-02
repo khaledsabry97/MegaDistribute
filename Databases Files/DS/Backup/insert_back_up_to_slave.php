@@ -26,10 +26,8 @@ if($conn)
 	$sql = "INSERT INTO users(user_name,email,password) VALUES(\"$user_name\", \"$email\",\"$password\")";
 
 
-	mysqli_query($conn ,$sql);
-
-		
-	require('delete_backup.php');
+	if(mysqli_query($conn ,$sql))
+		require('delete_backup.php');
 
 
 	$conn->close();
