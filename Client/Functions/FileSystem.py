@@ -19,11 +19,11 @@ class FileSystem:
     def write_part(self,current_size,video,user_id,file_name,part_number):
         c = video.encode('ascii')
         c = base64.decodebytes(c)
-        currentPath = "./"+str(Data.id)+"/"+"[" + str(user_id) + "] "+file_name+str(part_number)+".mp4"
-        Data.path_array[part_number]=currentPath
+        currentPath = "./"+str(Data.userId)+"/"+"[" + str(user_id) + "] "+file_name+str(part_number)+".mp4"
+        Data.path_array[part_number-1]=currentPath
         mode = "ab"
-        if (not os.path.exists(str(Data.id))):
-            os.makedirs(str(Data.id))
+        if (not os.path.exists(str(Data.userId))):
+            os.makedirs(str(Data.userId))
 
 
         if(os.path.exists(currentPath)):

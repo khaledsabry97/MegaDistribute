@@ -4,7 +4,7 @@ import zmq
 import time
 import sys
 
-import requests
+
 
 from Data.data import Data
 

@@ -1,5 +1,5 @@
 from Connections.DataBaseController import DatabaseController
-from Controller import JsonEncoder
+from Controller.JsonEncoder import JsonEncoder
 from Data.Datakeepers import DataKeepers
 
 
@@ -27,26 +27,22 @@ class Download:
         arr = DatabaseController.getNodesContainsFile(userId,fileName)
 
 
-        structure = {}
+        structure = []
         for i in range(len(arr)):
             nodeId = arr[i]["node_id"]
-            file_Name = arr[i]["file_name"]
+            structure.append(int(nodeId))
 
-            if file_Name not in structure:
-                structure[file_Name] = []
-            structure[file_Name].append(nodeId)
-
-        if fileName in structure:
-            ips,ports,_,_ = DataKeepers.getIpsandPorts(structure[file_Name])
+        if len(structure) != 0:
+            ips,ports,_,_ = DataKeepers.getIpsandPorts(structure)
+            if len(ips) == 0:
+                self.noNodesAlive ( fileName , clientIp )
 
             jsonEncoder = JsonEncoder()
             jsonEncoder.downloadIpsPorts(ips, ports, clientIp)
 
-        else:
-            self.incorrectFileName(fileName,clientIp)
 
     def incorrectFileName(self, fileName, clientIp):
-        msg = "you have no file with this name: "+fileName
+        msg = "Servers are down!"
 
         jsonEncoder = JsonEncoder()
         jsonEncoder.downloadReqFailed(msg, fileName, clientIp)

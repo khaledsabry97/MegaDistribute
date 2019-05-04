@@ -4,16 +4,20 @@ import socket
 
 class Data:
 
-    global currentFilePath,fileName,userId,ip
+    global currentFilePath,fileName,userId,ip,path_array,files_recieved,file_size
     currentFilePath  = ""
     fileName = ""
+    file_size=0
     userId = 1
     ip = " "
+    path_array=[""]*6
+    files_recieved=False
+
     #DatabaseSlavesIp = ["1923.295,28895923,295295"]
 
     @staticmethod
     def getMasterIp():
-        masterIp = "192.168.0.102"
+        masterIp = "192.168.1.5"
         return masterIp
 
     @staticmethod
@@ -26,7 +30,7 @@ class Data:
     def getIp():
         ip = socket.gethostbyname(socket.gethostname())
         #return (socket.getfqdn())
-        return "192.168.0.102"
+        return "192.168.1.5"
 
 
     @staticmethod
@@ -37,7 +41,7 @@ class Data:
 
     @staticmethod
     def getDatabaseMaster():
-        masterDatabaseIp = "192.168.0.102"
+        masterDatabaseIp = "192.168.1.5"
         return  masterDatabaseIp
 
 

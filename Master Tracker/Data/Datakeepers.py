@@ -13,11 +13,11 @@ class DataKeepers:
 
     @staticmethod
     def inialize():
-        dks[1] = [0,"192.168.0.102" ]
+        dks[1] = [0,"192.168.1.5" ]
         ports[1] = [6000, 6002, 6004]
-        dks[2] = [0, "192.168.0.102" ]
+        dks[2] = [0, "192.168.1.5" ]
         ports[2] = [7000, 7002, 7004]
-        dks[3] = [0,"192.168.0.102"  ]
+        dks[3] = [0,"192.168.1.5"  ]
         ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id
@@ -133,20 +133,20 @@ class DataKeepers:
             print("no nodes found")
             return arr,False
 
-
+    @staticmethod
     def getIpsandPorts(nodeIds,size = 6):
         ips = []
-        ports = []
+        portss = []
         for i in range(len(nodeIds)):
             if DataKeepers.checkIfAlive(nodeIds[i]):
                 for j in range(len(ports[nodeIds[i]])):
-                    ports.append(ports[nodeIds[i]][j])
+                    portss.append(ports[nodeIds[i]][j])
                     ips.append(DataKeepers.getDataNodeIp(nodeIds[i]))
 
-        if len(ports) >= size:
-            return ips[0,size],ports[0,size],True,size
+        if len(portss) >= size:
+            return ips[0:size],portss[0:size],True,size
         else:
-            return ips,ports,False,len(ips)
+            return ips,portss,False,len(ips)
 
 
 
