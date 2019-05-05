@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861e1829-87ec-4a22-9c76-e97b69e322bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Connections/SenderController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Connections/SenderController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Connections/DataBaseController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Functions/Upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Functions/Upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/Data Keeper Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/Data Keeper Tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/Connections/ReceiverController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/Connections/ReceiverController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/Controller/JsonDecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/Controller/JsonDecoder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InsertThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/InsertThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/Master Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/Master Tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/links.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
@@ -40,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/decoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="8684">
               <caret line="336" selection-start-line="336" selection-end-line="336" />
             </state>
           </provider>
@@ -49,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="8970">
               <caret line="347" selection-start-line="347" selection-end-line="347" />
             </state>
           </provider>
@@ -58,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/requests/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="22438">
               <caret line="896" selection-start-line="896" selection-end-line="896" />
             </state>
           </provider>
@@ -79,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BackupThread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="385">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -88,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InsertThread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+            <state relative-caret-position="203">
+              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -103,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="23634">
               <caret line="916" selection-start-line="916" selection-end-line="916" />
             </state>
           </provider>
@@ -126,7 +123,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -134,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,6 +157,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,6 +219,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -229,7 +227,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33125648" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3956386" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3956386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -247,18 +245,48 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/InsertThread.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/InsertThread.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="6" />
+          <line>37</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8684">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8970">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22438">
+          <caret line="896" selection-start-line="896" selection-end-line="896" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23634">
+          <caret line="916" selection-start-line="916" selection-end-line="916" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/links.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -269,58 +297,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="336" selection-start-line="336" selection-end-line="336" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="896" selection-start-line="896" selection-end-line="896" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackupThread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="385">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="916" selection-start-line="916" selection-end-line="916" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InsertThread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        <state relative-caret-position="203">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/links.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>

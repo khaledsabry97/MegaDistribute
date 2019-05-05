@@ -36,6 +36,7 @@ class InsertThread(threading.Thread):
         for i in range(size):
             obj = self.data[i]
             data = {"server_id": obj["server_id"],
+                    "id":obj["id"],
                     "user_name": obj["user_name"],
                     "email": obj["email"],
                     "password": obj["password"]}
