@@ -13,11 +13,11 @@ class DataKeepers:
 
     @staticmethod
     def inialize():
-        dks[1] = [0,"192.168.1.5" ]
+        dks[1] = [0,"localhost" ]
         ports[1] = [6000, 6002, 6004]
-        dks[2] = [0, "192.168.1.5" ]
+        dks[2] = [0, "localhost" ]
         ports[2] = [7000, 7002, 7004]
-        dks[3] = [0,"192.168.1.5"  ]
+        dks[3] = [0,"localhost"  ]
         ports[3] = [8000, 8002, 8004]
 
     #update time for selected port id
@@ -143,10 +143,7 @@ class DataKeepers:
                     portss.append(ports[nodeIds[i]][j])
                     ips.append(DataKeepers.getDataNodeIp(nodeIds[i]))
 
-        if len(portss) >= size:
-            return ips[0:size],portss[0:size],True,size
-        else:
-            return ips,portss,False,len(ips)
+        return ips,portss,True,len(ips)
 
 
 

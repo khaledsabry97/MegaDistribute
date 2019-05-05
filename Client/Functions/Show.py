@@ -36,6 +36,8 @@ class Show () :
                # call the download class
                Data.fileName = files[int(file_number)]
                Data.file_size=fileSizes[int(file_number)]
+
+               print("downloading")
                download = Download ()
                download.sendDownloadReq ()
                break

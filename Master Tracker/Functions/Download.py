@@ -30,6 +30,7 @@ class Download:
         structure = []
         for i in range(len(arr)):
             nodeId = arr[i]["node_id"]
+            print(nodeId)
             structure.append(int(nodeId))
 
         if len(structure) != 0:
@@ -41,7 +42,7 @@ class Download:
             jsonEncoder.downloadIpsPorts(ips, ports, clientIp)
 
 
-    def incorrectFileName(self, fileName, clientIp):
+    def noNodesAlive(self, fileName, clientIp):
         msg = "Servers are down!"
 
         jsonEncoder = JsonEncoder()

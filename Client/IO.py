@@ -83,7 +83,7 @@ class IO:
     @staticmethod
     def upload():
         # Data.currentFilePath = getFilePath()
-        Data.currentFilePath = 'adele.mp4'
+        Data.currentFilePath = 'fast.mov'
         Data.fileName = input("what is the name of your file : ")
         from Functions.Upload import Upload
         upload = Upload()
@@ -118,13 +118,16 @@ class IO:
         print("[1] Upload")
         print("[2] Download")
         print("[3] LogOut")
+
         userAction = int(input())
         if userAction == 1:
             IO.upload()
         elif userAction == 2:
             IO.download()
+
         elif userAction == 3:
             Data.userId = -1
             IO.welcome()
+
         else:
             IO.welcome()
