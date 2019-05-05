@@ -25,6 +25,7 @@ class Show () :
         if len(files)==0 :
             print ("u have no files")
             Data.fileName=""  # user has no files
+
         else :
 
           for i in range ( len ( files ) ) :

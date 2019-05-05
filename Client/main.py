@@ -8,6 +8,6 @@ receiverThread.start()
 
 try:
     IO.welcome()
-except:
-    IO.welcome()
+except Exception as e:
+    print(e)
 
