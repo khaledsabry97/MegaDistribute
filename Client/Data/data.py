@@ -17,7 +17,7 @@ class Data:
 
     @staticmethod
     def getMasterIp():
-        masterIp = "192.168.137.50"
+        masterIp = "192.168.137.55"
         return masterIp
 
     @staticmethod
@@ -30,18 +30,18 @@ class Data:
     def getIp():
         ip = socket.gethostbyname(socket.gethostname())
         #return (socket.getfqdn())
-        return "192.168.137.50"
+        return "192.168.137.55"
 
 
     @staticmethod
     def getDatabaseSlaveIp():
-        DatabaseSlavesIp = ["192.168.137.36","192.168.43.34","192.168.43.153"]
+        DatabaseSlavesIp = ["192.168.137.36","192.168.137.80","192.168.137.216"]
         random.shuffle(DatabaseSlavesIp)  # randomize the array of nodes
         return DatabaseSlavesIp
 
     @staticmethod
     def getDatabaseMaster():
-        masterDatabaseIp = "192.168.137.50"
+        masterDatabaseIp = "192.168.137.55"
         return  masterDatabaseIp
 
 

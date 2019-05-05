@@ -11,7 +11,7 @@ class Data:
 
     @staticmethod
     def getMasterIp():
-        masterIp = "192.168.137.50"
+        masterIp = "192.168.137.55"
         return masterIp
 
     @staticmethod
@@ -23,4 +23,4 @@ class Data:
     @staticmethod
     def getLocalIp(self):
         # return (socket.getfqdn())
-        return "192.168.137.36"
+        return "192.168.137.55"
