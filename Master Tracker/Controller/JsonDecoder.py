@@ -45,10 +45,9 @@ class JsonDecoder(threading.Thread):
             duplicate = Duplicate()
             duplicate.duplicateComplete(user_id,file_name,file_size,node_id)
 
-        elif (func == "download_request"):
+        elif (func == "show_request"):
             user_id = jsons["user_id"]
             client_ip = jsons["client_ip"]
-
             download = Download()
             download.showFiles(user_id,client_ip)
 

@@ -58,7 +58,7 @@ class JsonEncoder:
 
 
     def downloadReqFailed(self,msg,fileName,receiverIp):
-        func = "upload_req_failed"
+        func = "download_req_failed"
         sendingMsg = {"func":func,
                       "msg":msg,
                       "file_name":fileName}

@@ -92,8 +92,9 @@ class JsonEncoder:
 
                 size = os.path.getsize(currentPath)
 
-                binary_file.seek(byte, 1)  # Go to beginning of the file
-                couple_bytes = binary_file.read(bytesToRead)
+                binary_file.seek(int(byte))  # Go to beginning of the file
+
+                couple_bytes = binary_file.read(int(bytesToRead))
                 c = base64.encodebytes(couple_bytes)
                 c = c.decode('ascii')
                 func = "downloading_part"
