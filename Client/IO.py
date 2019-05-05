@@ -35,7 +35,7 @@ class IO:
 
     @staticmethod
     def signIn():
-        b = True;
+        b = True
         while (b):
             username = input("Enter  a username: ")
             password = input("Enter a password: ")
@@ -59,7 +59,7 @@ class IO:
 
     @staticmethod
     def signUp():
-        b = True;
+        b = True
         while (b):
             username = input("Enter  a username: ")
             password = input("Enter a password: ")
@@ -83,7 +83,7 @@ class IO:
     @staticmethod
     def upload():
         # Data.currentFilePath = getFilePath()
-        Data.currentFilePath = 'adele.mp4'
+        Data.currentFilePath = 'fast.mov'
         Data.fileName = input("what is the name of your file : ")
         from Functions.Upload import Upload
         upload = Upload()

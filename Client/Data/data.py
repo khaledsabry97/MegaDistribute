@@ -30,7 +30,7 @@ class Data:
     def getIp():
         ip = socket.gethostbyname(socket.gethostname())
         #return (socket.getfqdn())
-        return "localhost"
+        return "192.168.137.36"
 
 
     @staticmethod
