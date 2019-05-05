@@ -39,7 +39,7 @@ class Download:
            if Data.path_array[x]=="" :
                return 0
 
-       Complete_video = open("D:\Academic\Project\DS_CFD\Client\ "+Data.fileName+".mp4", "wb+")
+       Complete_video = open(Data.fileName+".mp4", "wb+")
        for Part in Data.path_array:
            video= open(Part, "rb+")
            Complete_video.write(video.read())
