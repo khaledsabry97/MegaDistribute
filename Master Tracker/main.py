@@ -1,7 +1,10 @@
+import time
+
 from Connections.ReceiverController import ReceiverController
 from Data.Datakeepers import DataKeepers
 from Functions.Duplicate import Duplicate
 from Functions.SubscriberLive import SubscriberLive
+from Functions.checkNode import checkNode
 
 DataKeepers.inialize()
 
@@ -17,3 +20,9 @@ receiverThread2.start()
 receiverThread3.start()
 subscriberLiveThread.start()
 duplicateThread.start()
+
+time.sleep(5)
+
+
+checkNode = checkNode()
+checkNode.start()

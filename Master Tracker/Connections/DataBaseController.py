@@ -101,3 +101,7 @@ class DatabaseController:
 
     # Duplication Methods#
     ################################
+    @staticmethod
+    def deleteDuplicate(node_id):
+        data = {"node_id": node_id}
+        return DatabaseController.inUpDL(Links.deleteNode,data)

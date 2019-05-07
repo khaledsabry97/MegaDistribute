@@ -82,7 +82,7 @@ class IO:
 
     @staticmethod
     def upload():
-        #Data.currentFilePath = IO.getFilePath()
+        Data.currentFilePath = IO.getFilePath()
         Data.currentFilePath = 'adele.mp4'
         Data.fileName = input("what is the name of your file : ")
         from Functions.Upload import Upload

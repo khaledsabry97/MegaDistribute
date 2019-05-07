@@ -12,8 +12,9 @@ class SubscriberLive(threading.Thread):
         idIp1 = DataKeepers.getDataNodeIp(1) + ":" + str(5006+1*1000)
         idIp2 = DataKeepers.getDataNodeIp(2) + ":" + str(5006+2*1000)
         idIp3 = DataKeepers.getDataNodeIp(3) + ":" + str(5006+3*1000)
+        idIp4 = DataKeepers.getDataNodeIp(3) + ":" + str(5006 + 4 * 1000)
 
-        self.ips = [idIp1,idIp2,idIp3]
+        self.ips = [idIp1,idIp2,idIp3,idIp4]
 
     def run(self):
         self.sub()

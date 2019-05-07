@@ -53,6 +53,8 @@ class Duplicate(threading.Thread):
                 senderIp = DataKeepers.getDataNodeIp(senderNodeId)
                 senderPort = DataKeepers.getRandomPort(senderNodeId)
                 newNodeIdList,_= DataKeepers.getAliveDataNodesExclude(nodeIds)
+                if(len(newNodeIdList) >2):
+                    newNodeIdList = newNodeIdList[0:2]
                 for k in range(len(newNodeIdList)):
                     print("[Duplicating] Node " + str(senderNodeId)+ " to "+ str(newNodeIdList[k]) + " file name : "+ str(currentFileName))
                     receiverNodeId = newNodeIdList[k]

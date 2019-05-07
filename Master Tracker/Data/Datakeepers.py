@@ -13,12 +13,14 @@ class DataKeepers:
 
     @staticmethod
     def inialize():
-        dks[1] = [0,"192.168.137.55" ]
+        dks[1] = [0,"localhost" ]
         ports[1] = [6000, 6002, 6004]
-        dks[2] = [0, "192.168.137.80" ]
+        dks[2] = [0, "localhost" ]
         ports[2] = [7000, 7002, 7004]
-        dks[3] = [0,"192.168.137.216"  ]
+        dks[3] = [0,"localhost"  ]
         ports[3] = [8000, 8002, 8004]
+        dks[4] = [0,"localhost"  ]
+        ports[4] = [9000, 9002, 9004]
 
     #update time for selected port id
     @staticmethod
@@ -66,7 +68,7 @@ class DataKeepers:
     #pass node id and see if it's alive or not
     @staticmethod
     def checkIfAlive(id):
-        if(int(id) > 3 or id <0):
+        if(int(id) > 4 or id <0):
             return False
         if int(time.time() * 1000) - dks[int(id)][0] <= 1100:
             return True
