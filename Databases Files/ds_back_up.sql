@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : TYDFS
+ Source Server         : DS
  Source Server Type    : MySQL
  Source Server Version : 100131
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 100131
  File Encoding         : 65001
 
- Date: 18/04/2019 13:51:49
+ Date: 07/05/2019 02:26:02
 */
 
 SET NAMES utf8mb4;
@@ -23,6 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `backup_users`;
 CREATE TABLE `backup_users`  (
   `server_id` int(11) NOT NULL,
+  `id` int(255) NULL DEFAULT NULL,
   `user_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `email` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `password` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,

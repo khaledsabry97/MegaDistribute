@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d12379-0114-46ee-abff-27ba35a06a09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Master Tracker/Functions/checkNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/close_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/db_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds_back_up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/insert_room.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/send_db_ips.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/slaves_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/backup_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/master_tracker/users.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Links.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Links.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/JsonEncoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2938">
+            <state relative-caret-position="2808">
               <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -88,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Connections/ReceiverController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
+            <state relative-caret-position="650">
               <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -169,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +204,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Data4">
+  <component name="RunManager" selected="Python.Data2">
     <configuration name="Data1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Data Keeper Tracker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -349,21 +352,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1087" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24893162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24893162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5576923" weight="0.3301887" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.866453" weight="0.3301887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30985916" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44230768" side_tool="true" visible="true" weight="0.3301887" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13354701" side_tool="true" visible="true" weight="0.3301887" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -459,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/JsonEncoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2938">
+        <state relative-caret-position="2808">
           <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -476,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Connections/ReceiverController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
+        <state relative-caret-position="650">
           <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />

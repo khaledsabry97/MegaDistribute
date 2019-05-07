@@ -38,6 +38,14 @@ if($db_master)
 
 if($inserted)
 	{	
+	$sql = "SELECT id FROM `users` where user_name = \"$user_name\" and `password` = \"$password\"";
+	$result = mysqli_query($db_master ,$sql);
+	$arrays = array();
+	$id  = 0;
+	while ($row = mysqli_fetch_assoc($result)) {
+		
+		$id = $row["id"];
+	}
 		echo json_encode(array("server_response"=>True));
 		$server_id = 1;
 		require('./backup/insert_back_up.php'); // this to insert in the back_up database

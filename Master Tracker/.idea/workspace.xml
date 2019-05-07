@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9036f2e8-a1d0-444e-8d99-d4a1bc6839ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Functions/checkNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DatabaseBackupServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/close_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/db_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds_back_up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/insert_room.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/send_db_ips.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/slaves_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/backup_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/master_tracker/users.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/DataBaseController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Links.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Links.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/SubscriberLive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1274">
+            <state relative-caret-position="1794">
               <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -40,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="546">
               <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -52,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Functions/checkNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="416">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -73,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="2704">
               <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -97,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/Duplicate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="1352">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -127,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/Upload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="598">
               <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
@@ -183,7 +187,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -332,14 +336,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1292735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3081761" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3542977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37002096" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -512,6 +516,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Links.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2704">
+          <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/SubscriberLive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/Duplicate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23634">
@@ -528,7 +589,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions/Upload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="598">
           <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
@@ -536,67 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Datakeepers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1274">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Connections/DataBaseController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Links.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/SubscriberLive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/Duplicate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Functions/checkNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="416">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

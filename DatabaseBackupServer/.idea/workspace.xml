@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861e1829-87ec-4a22-9c76-e97b69e322bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Master Tracker/Functions/checkNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Data/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/IO.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Keeper Tracker/Data/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/Backup/insert_back_up_to_slave.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/close_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Databases Files/DS/database_servers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/db_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/ds_back_up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/insert_room.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/send_db_ips.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/slaves_connections.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/DS/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/backup_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Databases Files/master_tracker/users.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Connections/DataBaseController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Datakeepers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Data/Links.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Data/Links.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/Functions/SubscriberLive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Master Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Master Tracker/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BackupThread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="236">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -120,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -131,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,6 +146,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,15 +207,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33125648" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33125648" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3956386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,8 +286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BackupThread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="236">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

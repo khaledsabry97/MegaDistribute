@@ -11,6 +11,7 @@ if(!$back_up)
 }
 //prepare the sql 
 $server_id = $_POST["server_id"];
+$id = $_POST["id"];
 $user_name = $_POST["user_name"];
 $email = $_POST["email"];
 $password = $_POST["password"];
@@ -23,7 +24,7 @@ require('ip_decider.php');
 $conn = mysqli_connect($ip,"root","","ds","3306");
 if($conn)
 {
-	$sql = "INSERT INTO users(user_name,email,password) VALUES(\"$user_name\", \"$email\",\"$password\")";
+	$sql = "INSERT INTO users(id,user_name,email,password) VALUES($id,\"$user_name\", \"$email\",\"$password\")";
 
 
 	if(mysqli_query($conn ,$sql))
