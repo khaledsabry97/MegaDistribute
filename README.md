@@ -1,4 +1,4 @@
-# DS_CFD
+# MegaDistribute
 
 ## the project has two modules
  1. Distributed Database
